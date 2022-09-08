@@ -4,7 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// lecture note: gets the root element located in the index.html file
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// lecture note: injects content in to the root grabbed above
+// lecture note: the app function returns something that looks like html
 root.render(
   <React.StrictMode>
     <App />
