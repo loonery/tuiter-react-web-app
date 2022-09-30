@@ -82,44 +82,35 @@ p#id-selector-2 {
 .margin-bottom {
     margin-bottom: 50px;
 }
-
 .margin-right-left {
     margin-left: 50px;
     margin-right: 50px;
 }
-
 .margin-all-around {
     margin: 30px;
 }
-
 .rounded-corners-bottom {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
 }
-
 .rounded-corners-all-around {
     border-radius: 50px;
 }
-
 .rounded-corners-inline {
     border-radius: 30px 0px 20px 50px;
 }
-
 .dimension-portrait {
     width: 75px;
     height: 100px;
 }
-
 .dimension-landscape {
     width: 100px;
     height: 75px;
 }
-
 .dimension-square {
     width: 75px;
     height: 75px;
 }
-
 .pos-relative-nudge-up-right {
     position: relative;
     bottom: 30px;
@@ -148,34 +139,27 @@ p#id-selector-2 {
     position: absolute;
     top: 20px;
     left: 120px;      }
-
 .pos-fixed {
     position: fixed;
     right: 0px;
     bottom: 50%;
 }
-
 .zindex-bring-to-front {
     z-index: 10;
 }
-
 .float-left {
     float: left;
 }
-
 .float-right {
     float: right;
     height: 100px;
 }
-
 .float-done {
     clear: both;
 }
-
 .grid-row {
     clear: both;
 }
-
 .grid-col-half-page {
     width: 50%;
     float: left;
@@ -184,22 +168,18 @@ p#id-selector-2 {
     width: 33%;
     float: left;
 }
-
 .grid-col-two-thirds-page {
     width: 67%;
     float: left;
 }
-
 .grid-col-left-sidebar {
     width: 20%;
     float: left;
 }
-
 .grid-col-main-content {
     width: 60%;
     float: left;
 }
-
 .grid-col-right-sidebar {
     width: 20%;
     float: left;
