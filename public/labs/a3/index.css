@@ -3,184 +3,392 @@ background-color: blue;
 color: white;}*/
 
 p#id-selector-1 {
-	background-color: red;
-	color: white;
+    background-color: red;
+    color: white;
 }
+
 p#id-selector-2 {
-	background-color: yellow;
-	color: black;
+    background-color: yellow;
+    color: black;
 }
+
 .class-selector {
-	background-color: yellow;
-	color: blue;
+    background-color: yellow;
+    color: blue;
 }
+
 .selector-1 .selector-3 { /* refers to .selector-3 as a descendant of .selector-1   */
-	background-color: red;
-	color: white;
+    background-color: red;
+    color: white;
 }
+
 .selector-2 > .selector-3 > .selector-4 { /* refers to .selector-4 as a direct child of .selector-3 */
-										  /* which is a direct child of .selector-2                 */
-	background-color: yellow;
-	color: blue;
+    /* which is a direct child of .selector-2                 */
+    background-color: yellow;
+    color: blue;
 }
-.fg-color-black { color: black; }
-.fg-color-white { color: white; }
-.fg-color-blue { color: #7070ff; }
-.fg-color-red { color: #ff7070; }
-.fg-color-green { color: green; }
+
+.fg-color-black {
+    color: black;
+}
+
+.fg-color-white {
+    color: white;
+}
+
+.fg-color-blue {
+    color: #7070ff;
+}
+
+.fg-color-red {
+    color: #ff7070;
+}
+
+.fg-color-green {
+    color: green;
+}
 
 .bg-color-yellow {
-	background-color: #ffff07;
+    background-color: #ffff07;
 }
+
 .bg-color-blue {
-	background-color: #7070ff;
+    background-color: #7070ff;
 }
+
 .bg-color-red {
-	background-color: #ff7070;
+    background-color: #ff7070;
 }
+
 .bg-color-green {
-	background-color: green;
+    background-color: green;
 }
 
 .border-fat {
-	border-width: 20px 30px 20px 30px; }
+    border-width: 20px 30px 20px 30px;
+}
+
 .border-thin {
-	border-width: 4px; }
+    border-width: 4px;
+}
+
 .border-solid {
-	border-style: solid; }
+    border-style: solid;
+}
+
 .border-dashed {
-	border-style: dashed; }
+    border-style: dashed;
+}
+
 .border-yellow {
-	border-color: #ffff07; }
+    border-color: #ffff07;
+}
+
 .border-red {
-	border-color: #ff7070; }
+    border-color: #ff7070;
+}
+
 .border-blue {
-	border-color: #7070ff; }
+    border-color: #7070ff;
+}
 
 .padded-top-left {
-	padding-top: 50px;
-	padding-left: 50px;
-}
-.padded-bottom-right {
-	padding-bottom: 50px;
-	padding-right: 50px;
-}
-
-.padding-fat {
-	padding: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
 .padded-bottom-right {
-	padding-bottom: 50px;
-	padding-right: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
 }
 
 .padding-fat {
-	padding: 50px;
+    padding: 50px;
+}
+
+.padded-bottom-right {
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.padding-fat {
+    padding: 50px;
 }
 
 .margin-bottom {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
+
 .margin-right-left {
-	margin-left: 50px;
-	margin-right: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
+
 .margin-all-around {
-	margin: 30px;
+    margin: 30px;
 }
+
 .rounded-corners-bottom {
-	border-bottom-left-radius: 40px;
-	border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
+
 .rounded-corners-all-around {
-	border-radius: 50px;
+    border-radius: 50px;
 }
+
 .rounded-corners-inline {
-	border-radius: 30px 0px 20px 50px;
+    border-radius: 30px 0px 20px 50px;
 }
+
 .dimension-portrait {
-	width: 75px;
-	height: 100px;
+    width: 75px;
+    height: 100px;
 }
+
 .dimension-landscape {
-	width: 100px;
-	height: 75px;
+    width: 100px;
+    height: 75px;
 }
+
 .dimension-square {
-	width: 75px;
-	height: 75px;
+    width: 75px;
+    height: 75px;
 }
+
 .pos-relative-nudge-up-right {
-	position: relative;
-	bottom: 30px;
-	left: 30px;
+    position: relative;
+    bottom: 30px;
+    left: 30px;
 }
+
 .pos-relative-nudge-down-right {
-	position: relative;
-	top: 20px;
-	left: 20px;
+    position: relative;
+    top: 20px;
+    left: 20px;
 }
+
 .pos-relative {
-	position: relative;
+    position: relative;
 }
 
 .pos-absolute-10-10 {
-	position: absolute;
-	top: 10px;
-	left: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
+
 .pos-absolute-50-50 {
-	position: absolute;
-	top: 50px;
-	left: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
+
 .pos-absolute-120-20 {
-	position: absolute;
-	top: 20px;
-	left: 120px;      }
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+
 .pos-fixed {
-	position: fixed;
-	right: 0px;
-	bottom: 50%;
+    position: fixed;
+    right: 0px;
+    bottom: 50%;
 }
+
 .zindex-bring-to-front {
-	z-index: 10;
+    z-index: 10;
 }
+
 .float-left {
-	float: left;
+    float: left;
 }
+
 .float-right {
-	float: right;
-	height: 100px;
+    float: right;
+    height: 100px;
 }
+
 .float-done {
-	clear: both;
+    clear: both;
 }
+
 .grid-row {
-	clear: both;
+    clear: both;
 }
+
 .grid-col-half-page {
-	width: 50%;
-	float: left;
+    width: 50%;
+    float: left;
 }
+
 .grid-col-third-page {
-	width: 33%;
-	float: left;
+    width: 33%;
+    float: left;
 }
+
 .grid-col-two-thirds-page {
-	width: 67%;
-	float: left;
+    width: 67%;
+    float: left;
 }
+
 .grid-col-left-sidebar {
-	width: 20%;
-	float: left;
+    width: 20%;
+    float: left;
 }
+
 .grid-col-main-content {
-	width: 60%;
-	float: left;
+    width: 60%;
+    float: left;
 }
+
 .grid-col-right-sidebar {
-	width: 20%;
-	float: left;
+    width: 20%;
+    float: left;
+}
+
+/* Challenge CSS */
+
+/* Rotation */
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-counter-clockwise {
+    transform: rotate(-12deg);
+}
+
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+
+.rotate-image {
+    transform: rotate(-10deg);
+}
+
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);
+}
+
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;
+}
+
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;
+}
+
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;
+}
+
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+
+/* Gradients */
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+.my-gradients-linear {
+	background: linear-gradient(blueviolet, pink, ghostwhite);
+	width: 200px;
+	height: 200px;
+}
+.gradients-radial {
+	background: radial-gradient(yellow, green); width: 200px;
+	height: 200px;
+}
+.my-gradients-radial {
+	background: radial-gradient(black, red, whitesmoke);
+	width: 200px;
+	height: 200px;
+}
+.my-gradients-positioned {
+	background: radial-gradient(at bottom right, black, gray, palevioletred, blueviolet, whitesmoke);
+	width: 200px;
+	height: 200px;
+	color: white;
+}
+
+/* Animations */
+.my-animation-keyframes {
+	position: relative;
+	top: 0px;
+	animation-duration: 7s;
+	animation-name: slidein;
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	color: white;
+}
+
+@keyframes slidein {
+	from {
+		position: relative;
+		top: 0px;
+		font-size: 100%;
+		margin-left: 100%;
+		width: 200px;
+		height: 200px;
+		background-color: yellow;
+		color: black;
+	}
+	50% {
+		position: relative;
+		top: -200px;
+		font-size: 300%;
+		margin-left: 25%;
+		width: 400px;
+		height: 400px;
+		background-color: blue;
+		color: white;
+	}
+	to {
+		position: relative;
+		top: 0px;
+		font-size: 100%;
+		margin-left: 0%;
+		width: 200px;
+		height: 200px;
+		background-color: red;
+		color: white;
+	}
 }

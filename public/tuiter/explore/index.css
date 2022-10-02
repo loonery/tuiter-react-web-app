@@ -10,7 +10,7 @@
 .wd-search-gear {
     float: right;
     position: relative;
-    top: 0px;
+    top: 0;
     right: 12px;
     font-size: xx-large;
 }
@@ -21,14 +21,13 @@
     font: 15px;
     padding: 16px;
 }
-.wd-selected {
+.wd-selected-tab {
     color: rgb(29, 161, 242);
     text-decoration: underline;
     text-decoration-color: blue;
     text-underline-offset: 10px;
 }
-
-/* Part B Styling  */
+/* Part C, D, and E Styling  */
 .wd-selected-post {
     padding: 13px;
     position: relative;
@@ -38,10 +37,7 @@
     font-size: 16px;
     color: white;
 }
-.wd-selected-post-subtext {
-    color: rgb(110, 118, 125);
-    font-size: 13px;
-}
+
 .wd-right-side-image {
     float: right;
     position: absolute;
@@ -50,13 +46,4 @@
     height: 100px;
     top: 5px;
     border-radius: 15px;
-}
-hr {
-    color: #282c34;
-}
-
-body {
-    color: #282c34;
-    background-color: black;
-    color: white;
 }
