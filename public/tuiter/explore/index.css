@@ -1,4 +1,3 @@
-
 /* Part A Styling */
 .wd-tuiter-bubble-search {
     border-radius: 50px;
@@ -7,6 +6,7 @@
     background: #282c34;
     color: white;
 }
+
 .wd-search-gear {
     float: right;
     position: relative;
@@ -21,18 +21,21 @@
     font: 15px;
     padding: 16px;
 }
+
 .wd-selected-tab {
     color: rgb(29, 161, 242);
     text-decoration: underline;
     text-decoration-color: blue;
     text-underline-offset: 10px;
 }
+
 /* Part C, D, and E Styling  */
 .wd-selected-post {
     padding: 13px;
     position: relative;
     top: 2px
 }
+
 .wd-selected-post .wd-selected-post-title {
     font-size: 16px;
     color: white;

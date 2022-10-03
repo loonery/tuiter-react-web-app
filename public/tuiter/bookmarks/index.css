@@ -35,10 +35,9 @@
 .wd-user-handle {
     position: relative;
     left: 12px;
+    top: 16px;
     font-size: 15px;
 }
-
-
 
 /* Tuit content (image and related links)*/
 .wd-content-image {
