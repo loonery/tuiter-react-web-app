@@ -9,24 +9,140 @@
 </head>
 <body>
 
-<!-- Container to hold some content  -->
-<div class="container">
+<!-- Container With Padding Holds Page Content  -->
+<div class="container pt-4">
 
     <!-- Outer Div Contains Main 3 Contents of Columns -->
     <div class="row">
-        <div class="col">
-            Navigation Links Go Here (Use List Grouping)
+
+        <!-- Navigation Column -->
+        <div class="col-2">
+
+            <!-- Navigation Buttons (list-group, padded at bottom) -->
+            <div class="list-group pb-2">
+                <a href="https://en.wikipedia.org/wiki/Dune_(novel)"
+                   class="list-group-item">Home</a>
+                <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+                   class="list-group-item list-group-item-action active">
+                    Explore</a>
+                <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
+                    Notifications</a>
+                <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+                   class="list-group-item list-group-item-action">
+                    Messages</a>
+                <a href="https://en.wikipedia.org/wiki/Ender%27s_Game"
+                   class="list-group-item list-group-item-action">
+                    Bookmarks</a>
+                <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+                   class="list-group-item list-group-item-action">
+                    Explore</a>
+                <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
+                    Notifications</a>
+                <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+                   class="list-group-item list-group-item-action">
+                    Messages</a>
+                <a href="https://en.wikipedia.org/wiki/Ender%27s_Game"
+                   class="list-group-item list-group-item-action">
+                    More</a>
+            </div>
+
+            <!-- Tweet Button Rendered Under Navigation Links -->
+            <button class="btn btn-primary rounded-pill w-100">
+                Tuit
+            </button>
+
         </div>
 
-        <div class="col">
-            Main Content
+        <!-- Main Content Column -->
+        <div class="col-6">
+
+            <!-- Search Bar Row (need to add gear and Mag) -->
+            <div class="row">
+                <div class="col-10">
+                    <div class="position-relative">
+                        <label class="w-100 pb-2">
+                            <!-- pad from the start -->
+                            <input class="rounded-pill form-control ps-5"
+                                   placeholder="Search Tuiter">
+                        </label>
+                        <span class="position-absolute wd-magnifying-search-tuiter">O-</span>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    COG
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1">Entertainment</a>
+                </li>
+            </ul>
+
+            <!-- Wrapping div for image and related caption -->
+            <div class="position-relative">
+                <!-- Image Goes Here -->
+                <img width="100%"
+                     src="../images/explore_images/onyx.jpg"
+                style="overflow: clip">
+
+                <!--Tuiter Image Text-->
+                <h1 class="position-absolute bottom-0 left-0 text-white"> Onyx's Coffee Lab</h1>
+            </div>
+
+            <!-- Under-image links -->
+            <ul class="list-group">
+
+                <!-- li represents one row under the main content image -->
+                <li class="list-group-item">
+                    <!-- row contains text aligned left and image aligned right -->
+                    <div class="row">
+
+                        <!-- Text inside image rows -->
+                        <div class="col-8">
+                            <div>text text text text text text text text</div>
+                            <div>text text text text text text text text</div>
+                            <div>text text text text text text text text</div>
+                            <div>text text text text text text text text</div>
+                        </div>
+
+                        <div class="col-4">
+                            <img class="float-end rounded-2"
+                                 src="../images/explore_images/lifting.jpg"
+                                 width="100"
+                                 height="100">
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="list-group-item">Tweet</li>
+                <li class="list-group-item">Tweet</li>
+                <li class="list-group-item">Tweet</li>
+                <li class="list-group-item">Tweet</li>
+            </ul>
+
         </div>
 
-        <div class="col">
+        <!-- Who to Follow Column -->
+        <div class="col-4">
             Who to follow
         </div>
     </div>
 </div>
 </body>
 </html>
-
