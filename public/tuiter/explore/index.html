@@ -5,6 +5,7 @@
     <title>Title</title>
     <link href="../../vendors/bootstrap-5.2.2-dist/css/bootstrap.css" rel="stylesheet">
     <link href="../../vendors/bootstrap-5.2.2-dist/js/bootstrap.js">
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
@@ -56,21 +57,33 @@
         <!-- Main Content Column -->
         <div class="col-6">
 
-            <!-- Search Bar Row (need to add gear and Mag) -->
+            <!-- Search Bar Row (need to add gear and Ma) -->
             <div class="row">
                 <div class="col-10">
+
+                    <!-- Position relative div holds the search bar and the embedded
+                         magnifying  glass, which is an absolutely positioned icon -->
                     <div class="position-relative">
+
+                        <!-- Search bar -->
                         <label class="w-100 pb-2">
+
                             <!-- pad from the start -->
                             <input class="rounded-pill form-control ps-5"
                                    placeholder="Search Tuiter">
                         </label>
-                        <span class="position-absolute wd-magnifying-search-tuiter">O-</span>
+
+                        <!-- Magnifying glass -->
+                        <span class="position-absolute wd-magnifying-search-tuiter">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+
                     </div>
                 </div>
 
+                <!-- Blue Gear (Fontawesome) -->
                 <div class="col-2">
-                    COG
+                    <i class="fa-solid fa-gear fa-2x" style="color: #0d6efd"></i>
                 </div>
             </div>
 
@@ -129,18 +142,89 @@
                     </div>
                 </li>
 
+                <!-- li represents one row under the main content image -->
+                <li class="list-group-item">
+                    <!-- row contains text aligned left and image aligned right -->
+                    <div class="row">
 
-                <li class="list-group-item">Tweet</li>
-                <li class="list-group-item">Tweet</li>
-                <li class="list-group-item">Tweet</li>
-                <li class="list-group-item">Tweet</li>
+                        <!-- Text inside image rows -->
+                        <div class="col-8">
+                            <div>text text text text text text text text</div>
+                            <div>text text text text text text text text</div>
+                            <div>text text text text text text text text</div>
+                            <div>text text text text text text text text</div>
+                        </div>
+
+                        <div class="col-4">
+                            <img class="float-end rounded-2"
+                                 src="../images/explore_images/pour_over.jpg"
+                                 width="100"
+                                 height="100">
+                        </div>
+                    </div>
+
+            <!-- li represents one row under the main content image -->
+            <li class="list-group-item">
+                <!-- row contains text aligned left and image aligned right -->
+                <div class="row">
+
+                    <!-- Text inside image rows -->
+                    <div class="col-8">
+                        <div>text text text text text text text text</div>
+                        <div>text text text text text text text text</div>
+                        <div>text text text text text text text text</div>
+                        <div>text text text text text text text text</div>
+                    </div>
+
+                    <div class="col-4">
+                        <img class="float-end rounded-2"
+                             src="../images/explore_images/snowboarding.jpg"
+                             width="100"
+                             height="100">
+                    </div>
+                </div>
+
+            <!-- li represents one row under the main content image -->
+            <li class="list-group-item">
+                <!-- row contains text aligned left and image aligned right -->
+                <div class="row">
+
+                    <!-- Text inside image rows -->
+                    <div class="col-8">
+                        <div>text text text text text text text text</div>
+                        <div>text text text text text text text text</div>
+                        <div>text text text text text text text text</div>
+                        <div>text text text text text text text text</div>
+                    </div>
+
+                    <div class="col-4">
+                        <img class="float-end rounded-2"
+                             src="../images/explore_images/c.png"
+                             width="100"
+                             height="100">
+                    </div>
+                </div>
             </ul>
+
+
 
         </div>
 
         <!-- Who to Follow Column -->
         <div class="col-4">
-            Who to follow
+            <ul class="list-group">
+
+                <!--Create rows in each list item with two columns each-->
+
+                <li class="list-group-item">Who to Follow</li>
+                <li class="list-group-item">Test</li>
+                <li class="list-group-item">Test</li>
+                <li class="list-group-item">Test</li>
+                <li class="list-group-item">Test</li>
+                <li class="list-group-item">Test</li>
+            </ul>
+
+
         </div>
     </div>
 </div>

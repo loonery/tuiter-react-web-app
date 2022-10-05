@@ -5,8 +5,487 @@
     <title>Title</title>
     <link href="../../vendors/bootstrap-5.2.2-dist/css/bootstrap.css" rel="stylesheet">
     <link href="../../vendors/bootstrap-5.2.2-dist/js/bootstrap.js">
+    <link href="index.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
 <body>
 
+<div class="container">
+    <h1>Bootstrap</h1>
+    <p>Welcome to Bootstrap!</p>
+
+    <!-- Grid System -->
+    <h2><a href="https://getbootstrap.com/docs/5.1/layout/grid/">Grid system</a></h2>
+    <div class="row">
+        <div class="col bg-danger text-white">
+            <h3>Left half</h3></div>
+        <div class="col bg-primary text-white">
+            <h3>Right half</h3></div></div>
+    <div class="row">
+        <div class="col-4 bg-warning">
+            <h3>One thirds</h3></div>
+        <div class="col-8 bg-success text-white">
+            <h3>Two thirds</h3></div></div>
+    <div class="row">
+        <div class="col-2 bg-dark text-white">
+            <h3>Sidebar</h3></div>
+        <div class="col-8 bg-secondary text-white">
+            <h3>Main content</h3></div>
+        <div class="col-2 bg-info">
+            <h3>Sidebar</h3></div></div>
+
+    <!--  Responsive Grids -->
+    <h2>Responsive grid system</h2>
+    <div class="row">
+        <div class="col-12 col-md-6 col-xl-3 bg-warning">
+            <h3>Column A</h3>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 bg-primary text-white">
+            <h3>Column B</h3>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 bg-danger text-white">
+            <h3>Column C</h3>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 bg-success text-white">
+            <h3>Column D</h3>
+        </div>
+    </div><br>
+
+    <h2>Responsive grid system</h2>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning">
+            <h4>1</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary text-white">
+            <h4>2</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger text-white">
+            <h4>3</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-success text-white">
+            <h4>4</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning">
+            <h4>5</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary text-white">
+            <h4>6</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger text-white">
+            <h4>7</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-success text-white">
+            <h4>8</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning">
+            <h4>9</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary text-white">
+            <h4>10</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger text-white">
+            <h4>11</h4></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-success text-white">
+            <h4>12</h4></div>
+    </div><br>
+
+    <!-- Bootstrap Tables -->
+    <h2>Tables</h2>
+    <table class="table">
+        <thead>
+        <tr class="table-dark"><th>Quiz</th><th>Topic</th><th>Date</th><th>Grade</th></tr>
+        </thead>
+        <tbody>
+        <tr class="table-warning"><td>Q1</td><td>HTML</td><td>2/3/21</td><td>85</td></tr>
+        <tr class="table-danger"><td>Q2</td><td>CSS</td><td>2/10/21</td><td>90</td></tr>
+        <tr class="table-primary"><td>Q3</td><td>JavaScript</td><td>2/17/21</td><td>90</td></tr>
+        </tbody>
+        <tfoot>
+        <tr class="table-success"><td colspan="3">Average</td><td>90</td></tr>
+        </tfoot>
+    </table><br>
+
+
+    <!-- Responsive Tables (Scrollbars) -->
+    <h2>
+        <a href="https://getbootstrap.com/docs/5.1/content/tables/#responsive-tables">
+            Responsive tables</a></h2>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr><th>Very</th><th>long</th><th>set</th><th>of</th><th>columns</th>
+                <th>Very</th><th>long</th><th>set</th><th>of</th><th>columns</th>
+                <th>Very</th><th>long</th><th>set</th><th>of</th><th>columns</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Very</td><td>long</td><td>set</td><td>of</td><td>columns</td>
+                <td>Very</td><td>long</td><td>set</td><td>of</td><td>columns</td>
+                <td>Very</td><td>long</td><td>set</td><td>of</td><td>columns</td>
+            </tr>
+            </tbody>
+        </table>
+    </div><br>
+
+    <!-- Styling Lists -->
+    <h2>
+        <a href="https://getbootstrap.com/docs/5.1/components/list-group/">
+            Favorite movies</a>
+    </h2>
+    <ul class="list-group">
+        <li class="list-group-item active">Aliens</li>
+        <li class="list-group-item">Terminator</li>
+        <li class="list-group-item">Blade Runner</li>
+        <li class="list-group-item">Lord of the Ring</li>
+        <li class="list-group-item disabled">Star Wars</li>
+    </ul><br>
+
+    <!-- Lists of Hyperlinks -->
+    <h3>
+        <a href="https://getbootstrap.com/docs/5.1/components/list-group/#links-and-buttons">
+            Favorite books</a>
+    </h3>
+    <div class="list-group">
+        <a href="https://en.wikipedia.org/wiki/Dune_(novel)" class="list-group-item list-group-item-action active">
+            Dune</a>
+        <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings" class="list-group-item list-group-item-action">
+            Lord of the Rings</a>
+        <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
+        The Forever War</a>
+        <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)" class="list-group-item list-group-item-action">
+            2001 A Space Odyssey</a>
+        <a href="https://en.wikipedia.org/wiki/Ender%27s_Game" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Ender's Game</a>
+    </div><br>
+
+    <!-- Forms -->
+    <h2>
+        <a href="https://getbootstrap.com/docs/5.1/forms/form-control/">
+            Forms
+        </a>
+    </h2>
+    <div class="mb-3">
+        <label for="input1"
+               class="form-label">
+            Email address</label>
+        <input type="email"
+               class="form-control"
+               id="input1"
+               placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="textarea1"
+               class="form-label">
+            Example textarea</label>
+        <textarea class="form-control"
+                  id="textarea1"
+                  rows="3"></textarea>
+    </div><br>
+
+    <!-- Styling Dropdowns -->
+    <h3>
+        <a href="https://getbootstrap.com/docs/5.1/forms/select/">
+            Dropdowns</a>
+    </h3>
+    <select class="form-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select><br>
+
+    <!--Binary Switches-->
+    <h3>
+        <a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#switches">Switches</a>
+    </h3>
+    <div class="form-check form-switch">
+        <input class="form-check-input"
+               type="checkbox"
+               id="switch1">
+        <label class="form-check-label" for="switch1">
+            Default switch checkbox input</label>
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input"
+               type="checkbox"
+               id="switch2"
+               checked>
+        <label class="form-check-label"
+               for="switch2">
+            Checked switch checkbox input</label>
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input"
+               type="checkbox"
+               id="switch3"
+               disabled>
+        <label class="form-check-label"
+               for="switch3">
+            Disabled switch checkbox input</label>
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input"
+               type="checkbox"
+               id="switch4"
+               checked disabled>
+        <label class="form-check-label"
+               for="switch4">
+            Disabled checked switch checkbox input</label>
+    </div><br>
+
+    <!--Bootstrap Sliders-->
+    <h3>
+        <a href="https://getbootstrap.com/docs/5.1/forms/range/#steps">
+            Range
+        </a>
+    </h3>
+    <label for="range1"
+           class="form-label">
+        Example range</label>
+    <input type="range"
+           class="form-range"
+           min="0"
+           max="5"
+           step="0.5"
+           id="range1"/>
+
+
+    <!-- Input Addon Styling -->
+    <h3><a href="https://getbootstrap.com/docs/5.1/forms/input-group/">Addons</a></h3>
+    <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <span class="input-group-text">0.00</span>
+        <input type="text" class="form-control">
+    </div>
+    <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-text">$</span>
+        <span class="input-group-text">
+    0.00</span>
+    </div><br>
+
+    <!--Making forms responsive-->
+    <h3><a href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form">Responsive forms</a></h3>
+    <div class="mb-3 row">
+        <label for="email1"
+               class="col-sm-2 col-form-label">
+            Email</label>
+        <div class="col-sm-10">
+            <input type="text"
+                   class="form-control"
+                   id="email1"
+                   value="email@example.com">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="password1"
+               class="col-sm-2 col-form-label">
+            Password</label>
+        <div class="col-sm-10">
+            <input type="password"
+                   class="form-control"
+                   id="password1">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="textarea1"
+               class="col-sm-2 col-form-label">
+            Bio</label>
+        <div class="col-sm-10">
+  <textarea class="form-control"
+            id="textarea1"
+            rows="3"></textarea>
+        </div>
+    </div>
+
+    <!-- Responsive forms II -->
+    <h3><a href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form">Responsive forms</a>
+    </h3>
+    <form>
+        <div class="row mb-3">
+            <label for="r1" class="col-sm-2 col-form-label">
+                Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control"
+                       id="r1"/>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="r2" class="col-sm-2 col-form-label">
+                Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control"
+                       id="r2"/>
+            </div>
+        </div>
+        <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">
+                Radios</legend>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio"
+                           name="gridRadios" id="r3"
+                           value="option1" checked/>
+                    <label class="form-check-label" for="r3">
+                        First radio</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio"
+                           name="gridRadios" id="r4"
+                           value="option2"/>
+                    <label class="form-check-label" for="r4">
+                        Second radio</label>
+                </div>
+                <div class="form-check disabled">
+                    <input class="form-check-input"
+                           type="radio"
+                           name="gridRadios" id="r5"
+                           value="option3" disabled/>
+                    <label class="form-check-label" for="r5">
+                        Third disabled radio</label>
+                </div>
+            </div>
+        </fieldset>
+        <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox" id="r6"/>
+                    <label class="form-check-label" for="r6">
+                        Example checkbox</label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form><br><br>
+
+    <!-- Overriding CSS -->
+    <h3>Overriding Bootstrap style</h3>
+    <button class="btn btn-primary">
+        Regular Bootstrap Button
+    </button>
+    <br/>
+    <button class="btn btn-primary override-bs">
+        Overridden Button
+    </button><br><br>
+
+
+    <!-- Navigating with tabs, pills, and cards -->
+    <!-- Navigating with tabs -->
+    <h2><a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/">Tabs</a></h2>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
+        </li>
+    </ul><br><br>
+
+    <!--Navigating with Pills-->
+    <h3>
+        <a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/#pills">
+            Pills
+        </a>
+    </h3>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
+        </li>
+    </ul>
+
+    <!--Navigating with Cards-->
+    <h2>
+        <a href="https://getbootstrap.com/docs/5.1/components/card/">
+            Cards
+        </a>
+    </h2>
+    <div class="card" style="width: 18rem;">
+        <img src="../images/cards.jpg"
+             class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+                Some quick example text to build on the card
+                title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div><br><br>
+
+        <!--Fontawesome-->
+        <h2>Simple icons</h2>
+        <i class="fa fa-cog"></i>
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-share"></i>
+        <i class="fa fa-comment"></i><br/>
+        <i class="fa fa-image"></i>
+        <i class="fa fa-chart-bar"></i>
+        <i class="fa fa-calendar"></i>
+        <i class="fa fa-smile"></i>
+        <br><br><br><br>
+
+        <!--Resizing Icons-->
+        <h2>Resizing icons</h2>
+        <i class="fa fa-cog fa-2x"></i>
+        <i class="fa fa-heart fa-2x"></i>
+        <i class="fa fa-share fa-3x"></i>
+        <i class="fa fa-comment fa-3x"></i><br/>
+        <i class="fa fa-image fa-3x"></i>
+        <i class="fa fa-chart-bar fa-4x"></i>
+        <i class="fa fa-calendar" style="font-size: 5em"></i>
+        <i class="fa fa-smile" style="font-size: 3.5em"></i>
+        <br><br><br><br>
+
+        <!--Coloring Icons-->
+        <h2>Coloring icons</h2>
+        <i class="fa fa-cog fa-2x" style="color: tomato"></i>
+        <i class="fa fa-heart fa-2x" style="color: tomato"></i>
+        <i class="fa fa-share fa-3x" style="color: #5ec15b"></i><br/>
+        <i class="fa fa-comment fa-3x" style="color: #19d49e"></i>
+        <i class="fa fa-image fa-3x" style="color: rgb(234,123,12)"></i>
+        <i class="fa fa-chart-bar fa-4x" style="color: rgb(123,234,123)"></i>
+        <br><br><br><br>
+
+        <!--Brand Icons-->
+        <h2>Brand icons</h2>
+        <i class="fab fa-twitter fa-2x"></i><br/>
+        <i class="fab fa-facebook fa-2x"></i><br/>
+        <i class="fab fa-apple fa-2x"></i><br/>
+        <br><br><br><br>
+
+        <!-- Stacking Icons -->
+        <h2>Stacking icons</h2>
+                <span class="fa-stack fa-2x">
+            <i class="fas fa-square fa-stack-2x"></i>
+            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+            </span><br/>
+                <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+            </span><br/>
+                <span class="fa-stack fa-2x">
+            <i class="fas fa-camera fa-stack-1x"></i>
+            <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
+        </span><br/>
+        <br><br><br>
+
+        <!--Rotating Icons-->
+        <h2>Rotating icons</h2>
+        <div class="fa-4x">
+            <i class="fas fa-snowboarding"></i>
+            <i class="fas fa-snowboarding fa-rotate-90"></i>
+            <i class="fas fa-snowboarding fa-rotate-180"></i><br/>
+            <i class="fas fa-snowboarding fa-rotate-270"></i>
+            <i class="fas fa-snowboarding fa-flip-horizontal"></i>
+            <i class="fas fa-snowboarding fa-flip-vertical"></i><br/>
+            <i class="fas fa-snowboarding fa-flip-both"></i><br/>
+        </div>
+    </div>
 </body>
 </html>
+
