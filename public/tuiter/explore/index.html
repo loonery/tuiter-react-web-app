@@ -18,51 +18,53 @@
     <div class="row">
 
         <!-- NAVIGATION -->
-        <div class="col-2">
+        <div class="col-lg-2 col-md-2 col-sm-2">
 
             <!-- Navigation Buttons (list-group, padded at bottom) -->
             <div class="list-group pb-2 rounded-1">
                 <!-- Tuiter -->
-                <a href="https://en.wikipedia.org/wiki/Dune_(novel)"
-                   class="list-group-item"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="list-group-item"><i class="fa-brands fa-twitter"></i></a>
 
                 <!-- Home -->
-                <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+                <a href="#"
                    class="list-group-item list-group-item-action">
-                    <i class="fa fa-home"></i> Home</a>
+                    <i class="fa fa-home"></i> <span class="d-none d-xl-inline-block"> Home</span>
+                </a>
 
-                <!-- Home -->
-                <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+                <!-- Explore -->
+                <a href="#"
                    class="list-group-item list-group-item-action active">
-                    <i class="fa-solid fa-hashtag"></i> Explore</a>
+                    <i class="fa-solid fa-hashtag"></i> <span class="d-none d-xl-inline-block"> Explore</span></a>
 
                 <!-- Notifications -->
-                <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-bell"></i> Notifications</a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-bell"></i> <span class="d-none d-xl-inline-block"> Notifications</span></a>
 
                 <!-- Messages -->
-                <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+                <a href="#"
                    class="list-group-item list-group-item-action">
-                    <i class="fa fa-envelope" aria-hidden="true"></i> Messages</a>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> <span class="d-none d-xl-inline-block"> Messages
+                </span></a>
 
                 <!-- Bookmarks -->
-                <a href="https://en.wikipedia.org/wiki/Ender%27s_Game"
+                <a href="#"
                    class="list-group-item list-group-item-action">
-                    <i class="fa-sharp fa-solid fa-bookmark"></i> Bookmarks</a>
+                    <i class="fa-sharp fa-solid fa-bookmark"></i>
+                    <span class="d-none d-xl-inline-block"> Bookmarks</span></a>
 
                 <!-- Lists -->
-                <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+                <a href="#"
                    class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-list"></i> Lists</a>
+                    <i class="fa-solid fa-list"></i> <span class="d-none d-xl-inline-block"> Lists</span></a>
 
                 <!-- Profile -->
-                <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-user"></i> Profile</a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-user"></i> <span class="d-none d-xl-inline-block"> Profile</span></a>
 
                 <!--More -->
-                <a href="https://en.wikipedia.org/wiki/Ender%27s_Game"
+                <a href="#"
                    class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-circle-minus"></i> More</a>
+                    <i class="fa-solid fa-circle-minus"></i> <span class="d-none d-xl-inline-block"> More</span></a>
             </div>
 
             <!-- Tweet Button Rendered Under Navigation Links -->
@@ -73,7 +75,7 @@
         </div>
 
         <!-- MAIN CONTENT -->
-        <div class="col-6">
+        <div class="col-lg-6 col-md-10 col-sm-10">
 
             <!-- Search Bar Row (need to add gear and Ma) -->
             <div class="row">
@@ -119,16 +121,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sports</a>
                 </li>
-                <li class="nav-item">
+                <!-- from extra-small to small, hide this nav-tab -->
+                <li class="nav-item d-none d-md-block">
                     <a class="nav-link" href="#" tabindex="-1">Entertainment</a>
                 </li>
             </ul>
 
             <!-- Wrapping div for image and related caption -->
-            <div class="position-relative">
+            <div class="pt-2 position-relative">
                 <!-- Image Goes Here -->
                 <img width="100%"
-                     src="../images/explore_images/starship.jpg"
+                     src="../images/explore_images/starship.webp"
                      style="overflow: clip">
 
                 <!--Tuiter Image Text-->
@@ -150,7 +153,8 @@
                                 <i class="fa-solid fa-circle-check"></i></i>
                                 <span class="fw-light fs-6 text-secondary"> - 2h</span>
                             </div>
-                            <div class="fw-bold">ReactJS is a component based front end library that makes it very easy to
+                            <div class="fw-bold">ReactJS is a component based front end library that makes it very easy
+                                to
                                 build
                                 Single Page Applications or SPAs
                             </div>
@@ -246,7 +250,8 @@
         </div>
 
         <!-- WHO TO FOLLOW -->
-        <div class="col-4">
+        <!-- hide this tab from the smallest size until we reach large size -->
+        <div class="col-lg-4 d-none d-lg-block">
 
             <!--List of users-->
             <ul class="list-group rounded-1">
@@ -263,15 +268,13 @@
 
                         <!--Who to follow -->
                         <div class="col-8">
-
                             <div>
                                 <img class="rounded-circle float-start"
                                      src="../images/explore_images/java.png"
                                      height="48px" width="48px">
                             </div>
-
-
-                            <div class="border float-start ps-1">
+                            <!--Username and handle -->
+                            <div class="float-start ps-1">
                                 Java <i class="fa-sharp fa-solid fa-circle-check fa-1x"></i>
                                 <div>
                                     @Java
@@ -280,16 +283,18 @@
                         </div>
 
                         <!-- Follow Button -->
-                        <div class="border col-4 float-none">
-                            <button class="position-relative btn btn-primary btn-sm rounded-pill">
-                                Follow
-                            </button>
+                        <div class="col-4 float-none">
+                            <div class="float-end pt-2">
+                                <button class="btn btn-primary btn-sm rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </li>
 
                 <!-- User to follow -->
-                <li class="list-group-item">
+                <li class="list-group-item float-none">
 
                     <div class="row">
 
@@ -313,10 +318,13 @@
 
                         <!-- Follow Button -->
                         <div class="col-4 float-none">
-                            <button class="wd-follow-button btn btn-primary btn-sm rounded-pill">
-                                Follow
-                            </button>
+                            <div class="float-end pt-2">
+                                <button class="btn btn-primary btn-sm rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
                         </div>
+
                     </div>
                 </li>
 
@@ -326,7 +334,7 @@
                     <div class="row">
 
                         <!--Who to follow -->
-                        <div class="col-8">
+                        <div class="border col-8">
 
                             <div>
                                 <img class="rounded-circle float-start"
@@ -335,7 +343,7 @@
                             </div>
 
 
-                            <div class="float-start ps-1">
+                            <div class="border float-start ps-1">
                                 Virgin Galactic <i class="fa-sharp fa-solid fa-circle-check fa-1x"></i>
                                 <div>
                                     @virgingalactic
@@ -345,9 +353,11 @@
 
                         <!-- Follow Button -->
                         <div class="col-4 float-none">
-                            <button class="wd-follow-button btn btn-primary btn-sm rounded-pill">
-                                Follow
-                            </button>
+                            <div class="float-end pt-2">
+                                <button class="btn btn-primary btn-sm rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -377,9 +387,11 @@
 
                         <!-- Follow Button -->
                         <div class="col-4 float-none">
-                            <button class="wd-follow-button btn btn-primary btn-sm rounded-pill">
-                                Follow
-                            </button>
+                            <div class="float-end pt-2">
+                                <button class="btn btn-primary btn-sm rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -406,12 +418,13 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Follow Button -->
                         <div class="col-4 float-none">
-                            <button class="wd-follow-button btn btn-primary btn-sm rounded-pill">
-                                Follow
-                            </button>
+                            <div class="float-end pt-2">
+                                <button class="btn btn-primary btn-sm rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </li>
