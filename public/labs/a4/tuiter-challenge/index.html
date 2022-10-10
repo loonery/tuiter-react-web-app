@@ -8,10 +8,10 @@
     <link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 </head>
-<body>
+<body class="wd-background">
 
 <!-- Container With Padding Holds Page Content  -->
-<div class="container pt-4 min">
+<div class="wd-background container pt-4 min">
 
     <!-- Outer Div Contains Main 3 Contents of Columns -->
     <div class="row">
@@ -22,48 +22,58 @@
             <!-- Navigation Buttons (list-group, padded at bottom) -->
             <div class="list-group pb-2 rounded-1">
                 <!-- Tuiter -->
-                <a href="#" class="list-group-item"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"
+                   class="wd-left-navigation list-group-item pb-4">
+                    <i class="fa-brands fa-twitter fa-2x" style="color: lavender"></i>
+                </a>
 
                 <!-- Home -->
                 <a href="#"
-                   class="list-group-item list-group-item-action">
-                    <i class="fa fa-home"></i> <span class="d-none d-xl-inline-block"> Home</span>
+                   class="wd-left-navigation list-group-item list-group-item-action pb-4">
+                    <i class="fa-regular fa-building wd-icon-override"></i>
+                    <span class="d-none d-xl-inline-block wd-navigation-text">&ensp;Home
                 </a>
 
                 <!-- Explore -->
                 <a href="#"
-                   class="list-group-item list-group-item-action active">
-                    <i class="fa-solid fa-hashtag"></i> <span class="d-none d-xl-inline-block"> Explore</span></a>
+                   class="wd-left-navigation list-group-item list-group-item-action pb-4">
+                    <i class="fa-solid fa-hashtag wd-icon-override" color=></i>
+                    <span class="d-none d-xl-inline-block fw-bold wd-navigation-text">&ensp;Explore</span></a>
 
                 <!-- Notifications -->
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-bell"></i> <span class="d-none d-xl-inline-block"> Notifications</span></a>
+                <a href="#" class="wd-left-navigation list-group-item list-group-item-action pb-4">
+                    <i class="fa-regular fa-bell wd-icon-override" ></i>
+                    <span class="d-none d-xl-inline-block wd-navigation-text">&ensp;Notifications</span></a>
 
                 <!-- Messages -->
                 <a href="#"
-                   class="list-group-item list-group-item-action">
-                    <i class="fa fa-envelope" aria-hidden="true"></i> <span class="d-none d-xl-inline-block"> Messages
+                   class="wd-left-navigation list-group-item list-group-item-action pb-4">
+                    <i class="fa-regular fa-envelope wd-icon-override"></i>
+                    <span class="d-none d-xl-inline-block wd-navigation-text">&emsp;Messages
                 </span></a>
 
                 <!-- Bookmarks -->
                 <a href="#"
-                   class="list-group-item list-group-item-action">
-                    <i class="fa-sharp fa-solid fa-bookmark"></i>
-                    <span class="d-none d-xl-inline-block"> Bookmarks</span></a>
+                   class="wd-left-navigation list-group-item list-group-item-action pb-4">
+                    <i class="fa-regular fa-bookmark wd-icon-override"></i>
+                    <span class="d-none d-xl-inline-block wd-navigation-text">&emsp;Bookmarks</span></a>
 
                 <!-- Lists -->
                 <a href="#"
-                   class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-list"></i> <span class="d-none d-xl-inline-block"> Lists</span></a>
+                   class="wd-left-navigation list-group-item list-group-item-action pb-4">
+                    <i class="fa-regular fa-rectangle-list wd-icon-override"></i>
+                    <span class="d-none d-xl-inline-block wd-navigation-text">&emsp;Lists</span></a>
 
                 <!-- Profile -->
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-user"></i> <span class="d-none d-xl-inline-block"> Profile</span></a>
+                <a href="#" class="wd-left-navigation list-group-item list-group-item-action pb-4">
+                    <i class="fa-regular fa-user wd-icon-override"></i>
+                    <span class="d-none d-xl-inline-block wd-navigation-text">&emsp;Profile</span></a>
 
                 <!--More -->
                 <a href="#"
-                   class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-circle-minus"></i> <span class="d-none d-xl-inline-block"> More</span></a>
+                   class="wd-left-navigation list-group-item list-group-item-action pb-4">
+                    <i class="fa-regular fa-comment-dots wd-icon-override"></i>
+                    <span class="d-none d-xl-inline-block wd-navigation-text">&emsp;More</span></a>
             </div>
 
             <!-- Tuit Button Rendered Under Navigation Links -->
@@ -88,49 +98,51 @@
                         <label class="w-100 pb-2">
 
                             <!-- pad from the start -->
-                            <input class="rounded-pill form-control ps-5"
+                            <input class="bg-dark border-dark rounded-pill form-control ps-5"
                                    placeholder="Search Tuiter">
                         </label>
 
                         <!-- Magnifying glass -->
                         <span class="position-absolute wd-magnifying-search-tuiter">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-magnifying-glass" style="color: darkslategray"></i>
                         </span>
 
                     </div>
                 </div>
 
-                <!-- Blue Gear (Fontawesome) -->
-                <div class="col-2">
-                    <i class="fa-solid fa-gear fa-2x" style="color: #0d6efd"></i>
+                <!-- White Gear (Fontawesome) -->
+                <div class="pt-2 col-2">
+                    <i class="fa-solid fa-gear" style="color: white"></i>
                 </div>
             </div>
 
             <!-- Navigation Tabs -->
-            <ul class="nav nav-tabs">
+            <ul class="wd-nav-tab-group-overrides nav nav-fill">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">For You</a>
+                    <a class="text-secondary nav-link" href="#">For You</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Trending</a>
+                    <a class="wd-nav-tab-item-overrides text-secondary nav-link" href="#">Trending</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="wd-nav-tab-item-overrides text-secondary nav-link" href="#">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sports</a>
+                    <a class="wd-nav-tab-item-overrides text-secondary nav-link" href="#">Sports</a>
                 </li>
                 <!-- from extra-small to small, hide this nav-tab -->
                 <li class="nav-item d-none d-md-block">
-                    <a class="nav-link" href="#" tabindex="-1">Entertainment</a>
+                    <a class="wd-nav-tab-item-overrides wd-nav-tab-item-active nav-link" href="#" tabindex="-1">
+                        Entertainment</a>
                 </li>
             </ul>
 
             <!-- Wrapping div for image and related caption -->
             <div class="pt-2 position-relative">
                 <!-- Image Goes Here -->
-                <img width="100%"
-                     src="../../images/explore_images/starship.webp"
+                <img class="wd-image-content-overrides"
+                     width="100%"
+                     src="./coldplay.jpg"
                      style="overflow: clip">
 
                 <!--Tuiter Image Text-->
@@ -138,98 +150,61 @@
             </div>
 
             <!-- Under-image links -->
-            <ul class="rounded-0 list-group">
+            <ul class="rounded-0 list-group border border-dark border-opacity-75">
+
+                <!-- R Kelly Content -->
+                <li class="list-group-item wd-background">
+                    <!-- row contains text aligned left and image aligned right -->
+                    <div class="row">
+
+                        <!-- Text inside image rows -->
+                        <div class="col-10">
+                            <div class="fw-light fs-6 text-secondary wd-opacity-85">Web Development</div>
+                            <div class="text-white">R Kelly
+                            </div>
+                            <div class="text-secondary wd-opacity-85">
+                                18.2k tweets
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <i class="fa-solid fa-ellipsis pt-3 text-secondary float-end"></i>
+                        </div>
+                    </div>
+                </li>
 
                 <!-- ReactJS Content -->
-                <li class="list-group-item">
+                <li class="list-group-item wd-background float-none">
                     <!-- row contains text aligned left and image aligned right -->
                     <div class="row">
 
                         <!-- Text inside image rows -->
-                        <div class="col-8">
-                            <div class="fw-light fs-6 text-secondary">Web Development</div>
-                            <div class="fw-bold">ReactJS
-                                <i class="fa-solid fa-circle-check"></i></i>
-                                <span class="fw-light fs-6 text-secondary"> - 2h</span>
+                        <div class="col-10">
+                            <div class="fw-light fs-6 text-secondary wd-opacity-85">Trending in R&B & Soul</div>
+                            <div class="text-white"> Chloe
                             </div>
-                            <div class="fw-bold">ReactJS is a component based front end library that makes it very easy
-                                to
-                                build
-                                Single Page Applications or SPAs
+                            <div class="text-secondary wd-opacity-85">
+                                Trending with <span class="text-primary">Halle</span>
                             </div>
                         </div>
-
-                        <div class="col-4">
-                            <img class="float-end rounded-2"
-                                 src="../../images/explore_images/react.png"
-                                 width="100"
-                                 height="100">
+                        <div class="col-2">
+                            <i class="fa-solid fa-ellipsis pt-3 text-secondary float-end"></i>
                         </div>
                     </div>
                 </li>
 
-                <!-- JavaScript Content -->
-                <li class="list-group-item">
+                <!-- Stanley Tucci Content -->
+                <li class="list-group-item wd-background float-none">
                     <!-- row contains text aligned left and image aligned right -->
                     <div class="row">
 
                         <!-- Text inside image rows -->
-                        <div class="col-8">
-                            <div class="fw-bold">JavaScript
-                                <i class="fa-solid fa-circle-check"></i></i>
-                                <span class="fw-light fs-6 text-secondary"> - 2h</span>
-                            </div>
-                            <div class="fw-bold">
-                                JavaScript is a programming language that can run on browsers as well as desktops
-                            </div>
-                            <div class="fw-light fs-6 text-secondary">123k Tuits</div>
-                        </div>
-
-                        <div class="col-4">
-                            <img class="float-end rounded-2"
-                                 src="../../images/explore_images/js.png"
-                                 width="100"
-                                 height="100">
-                        </div>
-                    </div>
-                </li>
-
-                <!-- JQuery Content -->
-                <li class="list-group-item">
-                    <!-- row contains text aligned left and image aligned right -->
-                    <div class="row">
-
-                        <!-- Text inside image rows -->
-                        <div class="col-8 content">
-
-                            <div class=>
-                                <div class="fw-light fs-6 text-secondary">Web Development</div>
-                                <div class="fw-bold">
-                                    jQuery
-                                </div>
-                                <div class="fw-light fs-6 text-secondary">123k Tuits</div>
-                            </div>
-
-                        </div>
-                        <div class="col-4">
-                            <img class="float-end rounded-2"
-                                 src="../../images/explore_images/jquery.png"
-                                 width="100"
-                                 height="100">
-                        </div>
-                    </div>
-                </li>
-
-                <!-- NodeJS Content -->
-                <li class="list-group-item">
-                    <!-- row contains text aligned left and image aligned right -->
-                    <div class="row">
-
-                        <!-- Text inside image rows -->
-                        <div class="col-8">
+                        <div class="col-9">
                             <div>
-                                <div class="fw-light fs-6 text-secondary">Web Development</div>
-                                <div class="fw-bold">NodeJS
+                                <div class="fw-light fs-6 text-secondary">
+                                    The Times
+                                </div>
+                                <div class="text-white">Stanely Tucci: 'Food or sex? That's the cruelest question...'
                                     <i class="fa-solid fa-circle-check"></i></i>
                                     <span class="fw-light fs-6 text-secondary"> - 2h</span>
                                 </div>
@@ -237,7 +212,7 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-3">
                             <img class="float-end rounded-2"
                                  src="../../images/explore_images/node.png"
                                  width="100"
@@ -253,15 +228,15 @@
         <div class="col-xl-4 col-lg-4 d-none d-lg-block">
 
             <!--List of users-->
-            <ul class="list-group rounded-1">
+            <ul class="list-group rounded-4">
 
                 <!-- who to follow box -->
-                <li class="list-group-item">
-                    <span class="fw-bold">Who to follow</span>
+                <li class="list-group-item bg-dark">
+                    <span class="fw-bold text-white fs-5">Who to follow</span>
                 </li>
 
                 <!-- User to follow -->
-                <li class="list-group-item float-none">
+                <li class="list-group-item float-none bg-dark">
 
                     <!-- Each List Item contains a Row-->
                     <div class="row">
@@ -269,20 +244,20 @@
                         <!--Who to follow -->
                         <div class="float-start">
                                 <img class="rounded-circle float-start"
-                                     src="../../images/explore_images/java.png"
+                                     src="bee.png"
                                      height="48px" width="48px">
 
                             <!--Username and handle -->
-                            <div class="fw-bold float-start ps-1">
-                                Java <i class="fa-sharp fa-solid fa-circle-check fa-1x"></i>
-                                <div class="fw-light">
-                                    @Java
+                            <div class="float-start text-white wd-user-name ps-1">
+                                The Babylon Bee <i class="fa-sharp fa-solid fa-circle-check fa-1x"></i>
+                                <div class="text-secondary wd-user-handle">
+                                    @TheBabylonBee
                                 </div>
                             </div>
 
                             <!-- Follow Button -->
                             <div class="float-end pt-2">
-                                <button class="btn btn-primary btn-sm rounded-pill">
+                                <button class="btn btn-light fw-bold btn-sm rounded-pill">
                                     Follow
                                 </button>
                             </div>
@@ -291,7 +266,7 @@
                 </li>
 
                 <!-- User to follow -->
-                <li class="list-group-item float-none">
+                <li class="list-group-item float-none bg-dark">
 
                     <!-- Each List Item contains a Row-->
                     <div class="row">
@@ -299,20 +274,20 @@
                         <!--Who to follow -->
                         <div class="float-start">
                             <img class="rounded-circle float-start"
-                                 src="../../images/explore_images/relativity.png"
+                                 src="./jack-posobiec.jpg"
                                  height="48px" width="48px">
 
                             <!--Username and handle -->
-                            <div class="fw-bold float-start ps-1">
-                                Relavity Space <i class="fa-sharp fa-solid fa-circle-check fa-1x"></i>
-                                <div class="fw-light">
-                                    @relativityspace
+                            <div class="text-white float-start ps-1 wd-user-name">
+                                Jack Posobiec &#127482;&#127480; <i class="fa-sharp fa-solid fa-circle-check fa-1x"></i>
+                                <div class="text-secondary wd-user-handle wd-user-handle">
+                                    @JackPosobiec
                                 </div>
                             </div>
 
                             <!-- Follow Button -->
                             <div class="float-end pt-2">
-                                <button class="btn btn-primary btn-sm rounded-pill">
+                                <button class="btn btn-light fw-bold btn-sm rounded-pill">
                                     Follow
                                 </button>
                             </div>
@@ -320,97 +295,16 @@
                     </div>
                 </li>
 
-
-                <!-- User to follow -->
-                <li class="list-group-item float-none">
+                <li class="list-group-item float-none bg-dark">
 
                     <!-- Each List Item contains a Row-->
                     <div class="row">
-
-                        <!--Who to follow -->
-                        <div class="float-start">
-                            <img class="rounded-circle float-start"
-                                 src="../../images/explore_images/virgin.svg"
-                                 height="48px" width="48px">
-
-                            <!--Username and handle -->
-                            <div class="fw-bold float-start ps-1">
-                                Virgin Galactic <i class="fa-sharp fa-solid fa-circle-check fa-1x"></i>
-                                <div class="fw-light">
-                                    @virgingalactic
-                                </div>
-                            </div>
-
-                            <!-- Follow Button -->
-                            <div class="float-end pt-2">
-                                <button class="btn btn-primary btn-sm rounded-pill">
-                                    Follow
-                                </button>
-                            </div>
+                        <div class="text-primary">
+                            Show More
                         </div>
                     </div>
                 </li>
 
-
-                <!-- User to follow -->
-                <li class="list-group-item float-none">
-
-                    <!-- Each List Item contains a Row-->
-                    <div class="row">
-
-                        <!--Who to follow -->
-                        <div class="float-start">
-                            <img class="rounded-circle float-start"
-                                 src="../../images/explore_images/nasa.png"
-                                 height="48px" width="48px">
-
-                            <!--Username and handle -->
-                            <div class="fw-bold float-start ps-1">
-                                Nasa <i class="fa-sharp fa-solid fa-circle-check fa-1x"></i>
-                                <div class="fw-light">
-                                    @Nasa
-                                </div>
-                            </div>
-
-                            <!-- Follow Button -->
-                            <div class="float-end pt-2">
-                                <button class="btn btn-primary btn-sm rounded-pill">
-                                    Follow
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- User to follow -->
-                <li class="list-group-item float-none">
-
-                    <!-- Each List Item contains a Row-->
-                    <div class="row">
-
-                        <!--Who to follow -->
-                        <div class="float-start">
-                            <img class="rounded-circle float-start"
-                                 src="../../images/explore_images/tesla.jpg"
-                                 height="48px" width="48px">
-
-                            <!--Username and handle -->
-                            <div class="fw-bold float-start ps-1">
-                                Tesla <i class="fa-sharp fa-solid fa-circle-check fa-1x"></i>
-                                <div class="fw-light">
-                                    @Tesla
-                                </div>
-                            </div>
-
-                            <!-- Follow Button -->
-                            <div class="float-end pt-2">
-                                <button class="btn btn-primary btn-sm rounded-pill">
-                                    Follow
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
             </ul>
         </div>
     </div>
