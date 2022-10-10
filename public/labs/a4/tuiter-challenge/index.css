@@ -8,13 +8,12 @@
         border: 0px;
     }
     .wd-verified-check {
-        font-size: .85rem;
+        font-size: .80rem;
         color: white;
     }
-    .wd-inline-fontawesome {         /* Took basis of this code from bootstrap library */
-        display: inline;
+    .wd-subtext {
+        font-size: small;
     }
-
 
     /* Took basis of this code from bootstrap library */
     .wd-background {
@@ -48,7 +47,6 @@
         height: 75%;
     }
 
-
 /*
  Navigation Content Styling.
  */
@@ -70,10 +68,9 @@
 /*
 Who to Follow 
  */
-.wd-user-handle {
-    opacity: 80%;
-}
-.wd-user-name {
-    opacity: 85%;
-}
-
+    .wd-user-handle {
+        opacity: 80%;
+    }
+    .wd-user-name {
+        opacity: 85%;
+    }
