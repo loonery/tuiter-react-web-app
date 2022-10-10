@@ -4,6 +4,16 @@
     .wd-opacity-85 {
         opacity: 85%;
     }
+    .wd-no-border {
+        border: 0px;
+    }
+    .wd-verified-check {
+        font-size: .85rem;
+        color: white;
+    }
+    .wd-inline-fontawesome {         /* Took basis of this code from bootstrap library */
+        display: inline;
+    }
 
 
     /* Took basis of this code from bootstrap library */
