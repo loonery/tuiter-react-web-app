@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<h2>Writing to the DOM</h2>
+<script>
+    document.write('Welcome to JavaScript!')
+</script>
+<h2>Calculating an HTML string</h2>
+<script>
+    const renderTodos = (todos) => `
+<ul>
+${todos.map(todo =>
+        `<li>${todo}</li>`
+    ).join('')}
+</ul>`;
+    const todos = ['Pickup kids', 'Feed dogs']
+    let html = renderTodos(todos);
+    document.write(html);
+</script>
+
+
+
+
+</body>
+</html>
