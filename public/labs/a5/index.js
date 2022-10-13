@@ -186,7 +186,7 @@ const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
 console.log(greeting2)
 
 // 2.8.1 Writing to the DOM
-    // code written in index.html
+    // code written in old_index.html
 
 // 2.10 Executing JQuery Scripts
 const init = () => {

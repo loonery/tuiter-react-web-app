@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// lecture note: gets the root element located in the index.html file
+// lecture note: gets the root element located in the old_index.html file
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // lecture note: injects content in to the root grabbed above
