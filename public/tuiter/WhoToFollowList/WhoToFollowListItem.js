@@ -6,7 +6,7 @@ const whoToFollowListItem = (who) => {
                 <!--Who to follow -->
                 <div class="float-start">
                     <img class="rounded-circle float-start"
-                         src"${who.avatarIcon}"
+                         src=${who.avatarIcon}
                          height="48px" width="48px">
     
                     <!--Username and handle -->

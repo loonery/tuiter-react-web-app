@@ -1,5 +1,5 @@
-import who from "./who";
-import WhoToFollowListItem from "./WhoToFollowListItem";
+import who from "./who.js";
+import WhoToFollowListItem from "./WhoToFollowListItem.js";
 
 const whoToFollowList = () => {
     return(`
@@ -20,4 +20,5 @@ const whoToFollowList = () => {
         </ul>
     `)
 }
+$(whoToFollowList)
 export default whoToFollowList;
