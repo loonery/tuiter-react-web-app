@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="./index.css" rel="stylesheet"><link>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
 </head>
@@ -12,18 +13,112 @@
     document.write('Welcome to JavaScript!')
 </script>
 <h2>Calculating an HTML string</h2>
+
 <script>
     const renderTodos = (todos) => `
-<ul>
-${todos.map(todo =>
-        `<li>${todo}</li>`
-    ).join('')}
-</ul>`;
+    <ul>
+    ${todos.map(todo =>
+            `<li>${todo}</li>`
+        ).join('')}
+    </ul>`;
     const todos = ['Pickup kids', 'Feed dogs']
     let html = renderTodos(todos);
     document.write(html);
 </script>
 
+<!--Binding objects from the dom-->
+<h2 id="bind-by-id">Binding by ID</h2>
+<h3 class="bind-by-class">Binding 1 by Class</h3>
+<h3 class="bind-by-class">Binding 2 by Class</h3>
+
+<!--Changing Style with JS-->
+<h2 id="change-style">
+    Change style</h2>
+<h3 class="change-style">
+    Change style 1</h3>
+<h3 class="change-style">
+    Change style 2</h3>
+
+<!--Getting and Setting Attributes-->
+<h2 id="get-id-attr">Get id attribute</h2>
+<h2 id="set-class-attr">Set class attribute</h2>
+
+<!--Adding and removing classes-->
+<h2 id="add-class-1">Add class</h2>
+<h2 id="remove-class-1" class="class-2">Remove class</h2>
+
+<!-- Hiding and Showing Content -->
+<h2 id="hide-me">Hide me</h2>
+<h2 id="show-me" class="im-hidden">Show me</h2>
+
+<!--Appending new Elements-->
+<h2>Appending new elements</h2>
+<ul id="append-new-elements"></ul>
+
+<!--Removing Elements-->
+<h2>Removing elements</h2>
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li id="remove-this">Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ul>
+<h2>Emptying elements</h2>
+<ul id="empty-this">
+    <li>Item A</li>
+    <li>Item B</li>
+    <li>Item C</li>
+    <li>Item D</li>
+    <li>Item E</li>
+</ul>
+
+<!--2.19 Changing Content-->
+<h2>Change content</h2>
+<p id="change-this-text">
+    Change me
+</p>
+<ul id="change-this-html">
+</ul>
+
+<!--2.20 the DOM hirearchy-->
+<h2>Navigating the
+    DOM hierarchy</h2>
+<div id="parent">
+    This is the parent DIV
+    <ul>
+        <li>Child 1</li>
+        <li id="child-2">Child 2</li>
+        <li>Child 3</li>
+    </ul>
+</div>
+
+
+<!--Handling Click Events -->
+<h2>Event handling</h2>
+<h2 class="clickable">
+    Click event</h2>
+<p class="clickable">
+    Anything can be
+    clickable</p>
+<button class="clickable">
+    Not just me</button>
+
+<!--Event Targets-->
+<h2 id="event-target">
+    Event target
+</h2>
+
+<!-- Hiding and Showing -->
+<h3 id="hide-show">
+    Hi/show element
+</h3>
+<button id="hide">
+    Hide
+</button>
+<button id="show">
+    Show
+</button>
 
 
 
