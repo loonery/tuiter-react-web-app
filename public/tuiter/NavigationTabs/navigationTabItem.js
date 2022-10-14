@@ -1,27 +1,21 @@
-const className = (tab) => {
+const navigationTabItem = (tab) => {
 
-    let activeString = "";
-    let wrapString = "";
-    let navLink = "nav-link"
+    let anchorClass = "nav-link";
+    let listItemClass = "nav-item";
 
     // JSON data determines if this tab is selected
     if (tab.active === true) {
-        activeString = activeString.concat(" active");
+        anchorClass = anchorClass.concat(" active");
     }
 
     // JSON data determines if we hide this tab
     if (tab.hideIfWrapping === true) {
-        wrapString = wrapString.concat(" d-none d-md-block");
+        listItemClass = listItemClass.concat(" d-none d-md-block");
     }
-    navLink = navLink.concat(activeString).concat(wrapString);
-    return navLink;
-}
-
-const navigationTabItem = (tab) => {
 
     return(`
-        <li class="nav-item">
-            <a class=${(className(tab))} href=${tab.link}>${tab.text}</a>
+        <li class="${anchorClass}">
+            <a class="${listItemClass}" href=${tab.link}>${tab.text}</a>
         </li>
     `)
 }
