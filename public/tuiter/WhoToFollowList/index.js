@@ -3,6 +3,7 @@ import WhoToFollowListItem from "./WhoToFollowListItem.js";
 
 const whoToFollowList = () => {
     return(`
+
         <!--List of users-->
         <ul class="list-group rounded-1">
     
@@ -10,7 +11,7 @@ const whoToFollowList = () => {
             <li class="list-group-item">
                 <span class="fw-bold">Who to follow</span>
             </li>
-    
+
             <!-- User to follow -->
             ${
                 who.map(user => {
@@ -20,5 +21,4 @@ const whoToFollowList = () => {
         </ul>
     `)
 }
-$(whoToFollowList)
 export default whoToFollowList;
