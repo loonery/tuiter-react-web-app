@@ -3,7 +3,7 @@ export default
     {
         text: 'For you',
         link: "#",
-        active: false,
+        active: true,
         hideIfWrapping: false,
     },
     {

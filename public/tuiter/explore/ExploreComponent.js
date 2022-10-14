@@ -31,7 +31,7 @@ const ExploreComponent = () => {
         </div>
         
         <!-- tabs -->
-        <ul class="nav mb-2 nav-tabs">
+        <ul class="nav nav-tabs mb-2">
             ${navigationTabList()}
         </ul>
         
