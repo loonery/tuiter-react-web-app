@@ -3,7 +3,7 @@ import navigationTabList from "../NavigationTabs/index.js";
 const ExploreComponent = () => {
     return(`
         <div class="row">
-            <div class="col-10">
+            <div class="col-11">
 
                 <!-- Position relative div holds the search bar and the embedded
                      magnifying  glass, which is an absolutely positioned icon -->
@@ -25,7 +25,7 @@ const ExploreComponent = () => {
             </div>
 
             <!-- Blue Gear (Fontawesome) -->
-            <div class="col-2">
+            <div class="col-1">
                 <i class="fa-solid fa-gear fa-2x" style="color: #0d6efd"></i>
             </div>
         </div>
@@ -36,13 +36,13 @@ const ExploreComponent = () => {
         </ul>
         
         <!-- image with overlaid text -->
-        <div class="pt-2 position-relative">
+        <div class="pb-2 position-relative">
             <img width="100%"
                  src="../images/explore_images/starship.webp"
                  style="overflow: clip">
 
             <!--Tuiter Image Text-->
-            <h1 class="position-absolute bottom-0 ps-2 text-white"> SpaceX's Starship</h1>
+            <h1 class="position-absolute bottom-0 text-muted ps-2"> SpaceX's Starship</h1>
         </div>
         
         <!-- Links -->

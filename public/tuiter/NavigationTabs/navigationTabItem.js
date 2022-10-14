@@ -1,7 +1,7 @@
 const navigationTabItem = (tab) => {
 
     let anchorClass = "nav-link";
-    let listItemClass = "nav-item";
+    let listItemClass = "nav-item text-white text-decoration-none";
 
     // JSON data determines if this tab is selected
     if (tab.active === true) {
