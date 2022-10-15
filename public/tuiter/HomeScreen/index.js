@@ -14,9 +14,6 @@ const homeScreen = () => {
             </div>
             <!-- Navigation Sidebar Component Loaded In -->
             <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-
-
-
             </div>
         </div>
     `);
