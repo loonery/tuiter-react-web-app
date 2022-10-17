@@ -58,7 +58,7 @@ const PostItem = (post) => {
                  <div class="ps-1 pb-2 text-white">
                     <div class="fw-semibold">   
                         ${post.userName} <i class="fa-sharp fa-solid fa-circle-check fa-1x"></i> 
-                        <span class="text-dark wd-small-font fw-light"> ${post.userHandle} &cdot ${post.tuitTime}</span>
+                        <span class="text-dark wd-small-font fw-light"> ${post.userHandle} &cdot; ${post.tuitTime}</span>
                     </div>
                     <div>
                         ${post.userTweet}
