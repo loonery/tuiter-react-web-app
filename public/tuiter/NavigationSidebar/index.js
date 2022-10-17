@@ -1,4 +1,4 @@
-const navigationSidebar = (active) => {
+const navigationSidebar = () => {
 
     return(`
         <!-- Navigation Buttons (list-group, padded at bottom) -->
@@ -54,12 +54,6 @@ const navigationSidebar = (active) => {
         </button>
     `)
 }
-
-$(document).ready(function () {
-
-
-});
-
 
 // export this function which produces static html as a function
 export default navigationSidebar;
