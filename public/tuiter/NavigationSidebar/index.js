@@ -8,7 +8,7 @@ const navigationSidebar = (active) => {
             <a href="#" class="list-group-item"><i class="fa-brands fa-twitter"></i></a>
 
             <!-- Home -->
-            <a href="#"
+            <a href="#Home"
                class="list-group-item list-group-item-action">
                 <i class="fa fa-home"></i> <span class="d-none d-xl-inline-block"> Home</span>
             </a>
@@ -54,6 +54,7 @@ const navigationSidebar = (active) => {
         </button>
     `)
 }
+
 $(document).ready(function () {
 
 
