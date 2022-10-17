@@ -19,7 +19,7 @@ const navigationSidebar = (props) => {
             </a>
 
             <!-- Explore -->
-            <a href="./index.html"
+            <a href="../explore/index.html"
                class="list-group-item list-group-item-action ${active("Explore", props)}">
                 <i class="fa-solid fa-hashtag"></i> 
                 <span class="d-none d-xl-inline-block"> Explore</span></a>
