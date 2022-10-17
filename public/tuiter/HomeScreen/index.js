@@ -7,7 +7,7 @@ function exploreComponent() {
         <div class="row mt-2">
             <!-- Sidebar Component Loaded In -->
             <div class="col-xl-2 col-lg-1 col-md-2 col-sm-2">
-                ${navigationSidebar()}
+                ${navigationSidebar({active: "Home"})}
             </div>
             <!-- Main Content Component Loaded In -->
             <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
