@@ -1,4 +1,5 @@
-function navigationSidebar() {
+const navigationSidebar = (active) => {
+
     return(`
         <!-- Navigation Buttons (list-group, padded at bottom) -->
         <div class="list-group pb-2 rounded-1">
@@ -53,5 +54,11 @@ function navigationSidebar() {
         </button>
     `)
 }
+$(document).ready(function () {
+
+
+});
+
+
 // export this function which produces static html as a function
 export default navigationSidebar;
