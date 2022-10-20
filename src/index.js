@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-// lecture note: gets the root element located in the old_index.html file
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+// lecture note: gets the root element located in the old_index.html file
 // lecture note: injects content in to the root grabbed above
 // lecture note: the app function returns something that looks like html
 root.render(

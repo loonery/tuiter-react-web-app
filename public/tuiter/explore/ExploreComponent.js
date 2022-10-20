@@ -1,5 +1,4 @@
-import postSummaryList from "../PostSummaryList/index.js";
-import navigationTabList from "../NavigationTabs/index.js";
+import navigationTabList from "../NavigationTabs";
 const ExploreComponent = () => {
     return(`
         <div class="row">
@@ -46,7 +45,7 @@ const ExploreComponent = () => {
         </div>
         
         <!-- Links -->
-        ${postSummaryList()}
+        <PostSummaryList/>
     `);
 }
 export default ExploreComponent;

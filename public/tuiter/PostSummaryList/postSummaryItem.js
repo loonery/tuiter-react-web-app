@@ -1,4 +1,4 @@
-const postSummaryItem = (post) => {
+const PostSummaryItem = (post) => {
     return(`
         <!-- ReactJS Content -->
         <li class="list-group-item">
@@ -26,4 +26,4 @@ const postSummaryItem = (post) => {
         </li>
     `)
 }
-export default postSummaryItem;
+export default PostSummaryItem;

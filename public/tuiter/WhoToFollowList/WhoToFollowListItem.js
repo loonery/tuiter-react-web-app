@@ -6,12 +6,12 @@ const whoToFollowListItem = (who) => {
                 <!--Who to follow Image-->
                 <div class="float-start">
                     <img class="rounded-circle float-start"
-                         src=${who.avatarIcon}
+                         src{who.avatarIcon}
                          height="48px" width="48px">
     
                     <!--Username and handle -->
                     <div class="fw-bold float-start ps-2">
-                        ${who.userName} <i class="fa-sharp fa-solid fa-circle-check fa-1x"></i>
+                        {who.userName} <i class="fa-sharp fa-solid fa-circle-check fa-1x"></i>
                         <div class="fw-light">
                             ${who.handle}
                         </div>

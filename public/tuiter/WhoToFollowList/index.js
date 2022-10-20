@@ -14,10 +14,10 @@ const whoToFollowList = () => {
 
             <!-- User to follow -->
             ${
-                who.map(user => {
-                    return(WhoToFollowListItem(user));
-                }).join('')
-            }
+    who.map(user => {
+        return(WhoToFollowListItem(user));
+    }).join('')
+}
         </ul>
     `)
 }

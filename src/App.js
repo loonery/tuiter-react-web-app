@@ -1,26 +1,22 @@
-import logo from './logo.svg';
+import './vendors/bootstrap-5.2.2-dist/css/bootstrap.min.css';
+import './vendors/fontawesome/css/all.min.css';
 import './App.css';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import HelloWorld from "./components/labs/hello-world.js"
+import Labs from "./components/labs/index.js";
+import Tuiter from "./components/Tuiter/index.js";
 
 // lecture note: this function is displaying the content that is shown on the application's
 // webPage
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+          <Routes>
+              <Route path="/hello" element={<HelloWorld/>}></Route>
+              <Route path="/" element={<Labs/>}></Route>
+              <Route path="/tuiter" element={<Tuiter/>}></Route>
+          </Routes>
+      </BrowserRouter>
   );
 }
 

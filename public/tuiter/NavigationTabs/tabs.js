@@ -29,5 +29,5 @@ export default
         link: "#",
         active: false,
         hideIfWrapping: true,
-    },
-];
+    }
+]
