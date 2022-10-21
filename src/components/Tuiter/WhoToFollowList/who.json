@@ -1,21 +1,21 @@
 [
   {
-    "avatarIcon": "../../../images/who-to-follow-images/java.png",
+    "avatarIcon": "./images/who-to-follow-images/java.png",
     "userName": "Java",
     "handle": "Java"
   },
   {
-    "avatarIcon": "../../../images/who-to-follow-images/nasa.png",
+    "avatarIcon": "./images/who-to-follow-images/nasa.png",
     "userName": "NASA",
     "handle": "NASA"
   },
   {
-    "avatarIcon": "../../../images/who-to-follow-images/relativity.png",
+    "avatarIcon": "./images/who-to-follow-images/relativity.png",
     "userName": "Relativity Space",
     "handle": "relativityspace"
   },
   {
-    "avatarIcon": "../../../images/who-to-follow-images/virgin.svg",
+    "avatarIcon": "./images/who-to-follow-images/virgin.svg",
     "userName": "Virgin Galactic",
     "handle": "virgingalactic"
   }

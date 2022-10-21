@@ -5,8 +5,8 @@ import React from "react";
 import "./index.css";
 
 // user-made component imports
-import PostSummaryList from "./PostSummaryList"
-import NavigationTabs from "./NavigationTabs";
+import PostSummaryList from "../PostSummaryList"
+import NavigationTabs from "../NavigationTabs";
 
 const ExploreContent = () => {
     return(
@@ -16,7 +16,7 @@ const ExploreContent = () => {
 
                     {/* Position relative div holds the search bar and the embedded
                          magnifying  glass, which is an absolutely positioned icon */}
-                    <div className="border position-relative">
+                    <div className="position-relative">
 
                         {/* Search bar */}
                         <label className="w-100 pb-2">
@@ -26,7 +26,7 @@ const ExploreContent = () => {
                         </label>
 
                         {/* Magnifying glass */}
-                        <span className="border position-absolute wd-magnifying-search-tuiter">
+                        <span className="position-absolute wd-magnifying-search-tuiter">
                             <i className="fa-solid fa-magnifying-glass"></i>
                         </span>
                     </div>
@@ -44,11 +44,11 @@ const ExploreContent = () => {
             {/* image with overlaid text */}
             <div className="pb-2 position-relative">
                 <img width="100%"
-                     alt={"starship"}
-                     src="../../../images/explore_images/starship.webp"/>
+                     alt={"Missing Image"}
+                     src="./images/explore_images/starship.webp"/>
 
                 {/*Tuiter Image Text*/}
-                <h1 className="position-absolute bottom-0 text-muted ps-2"> SpaceX's Starship</h1>
+                <h1 className="position-absolute bottom-0 text-muted ps-2 pb-2"> SpaceX's Starship</h1>
             </div>
 
             {/* Links */}

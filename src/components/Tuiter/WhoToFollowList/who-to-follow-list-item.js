@@ -24,14 +24,14 @@ const WhoToFollowListItem = ({
                                 @{who.handle}
                             </div>
                         </div>
-                    </div>
 
-                    {/*Follow Button */}
-                    <div className="float-end pt-2">
-                        <button className="btn btn-primary btn-sm rounded-pill">
+                        {/*Follow Button */}
+                        <button className="float-end mt-2 btn btn-primary btn-sm rounded-pill">
                             Follow
                         </button>
                     </div>
+
+
                 </div>
             </li>
         </>

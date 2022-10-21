@@ -4,14 +4,14 @@
     "userName": "ReactJS",
     "time": "2h",
     "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-    "image": "../../../images/post-summary-images/react.png"
+    "image": "./images/post-summary-images/react.png"
   },
   {
     "topic": "",
     "userName": "JavaScript",
     "time": "1 day",
     "title": "JavaScript is programming language that can run on browsers as well as desktops",
-    "image": "../../../images/post-summary-images/js.png",
+    "image": "./images/post-summary-images/js.png",
     "tweets": "123K"
   },
   {
@@ -19,7 +19,7 @@
     "userName": "",
     "title": "jQuery",
     "time": "last week",
-    "image": "../../../images/post-summary-images/jquery.png",
+    "image": "./images/post-summary-images/jquery.png",
     "tweets": "122K"
   },
   {
@@ -27,7 +27,7 @@
     "userName": "NodeJS",
     "title": "",
     "time": "last month",
-    "image": "../../../images/post-summary-images/node.png",
+    "image": "./images/post-summary-images/node.png",
     "tweets": "120K"
   }
 ]
