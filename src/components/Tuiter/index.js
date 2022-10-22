@@ -13,7 +13,6 @@ import React from "react";
 const Tuiter = () => {
     return(
         <>
-            {/*<NavigationSidebar/>*/}
             <ExploreScreen/>
         </>
     );

@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom";
 
 const activeTab = (link, active) => {
     active = active.toLowerCase();
@@ -14,20 +15,24 @@ const NavigationSidebar = ({active = 'Home'}) =>
                 <div className="list-group pb-2 rounded-1">
 
                     {/* Tuiter */}
-                    <a href="#" className="list-group-item"><i className="fa-brands fa-twitter"></i></a>
+                    <Link to={"/"}
+                          className="list-group-item">
+                        <i className="fa-brands fa-twitter"></i>
+                    </Link>
 
                     {/* Home */}
-                    <a href="../HomeScreen/index.html"
+                    <Link to={"/tuiter/home"}
                        className={`list-group-item list-group-item-action ${activeTab("Home", active)}`}>
-                        <i className="fa fa-home"></i> <span className="d-none d-xl-inline-block">
-                        Home</span>
-                    </a>
+                        <i className="fa fa-home"></i>
+                        <span className="d-none d-xl-inline-block"> Home</span>
+                    </Link>
 
                     {/* Explore */}
-                    <a href="../explore/index.html"
+                    <Link to={"/tuiter/explore"}
                        className={`list-group-item list-group-item-action ${activeTab("Explore", active)}`}>
                         <i className="fa-solid fa-hashtag"></i>
-                        <span className="d-none d-xl-inline-block"> Explore</span></a>
+                        <span className="d-none d-xl-inline-block"> Explore</span>
+                    </Link>
 
                     {/* Notifications */}
                     <a href="#"
