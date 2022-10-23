@@ -1,12 +1,27 @@
+import React from 'react';
 import PostContent from "./post-content";
-
-const HomePost = (post) => {
+const HomePost = (
+    {post = {
+            "userName": "Elon Musk",
+            "userHandle": "@elonmusk",
+            "userImage": "../images/home_images/elon.jpg",
+            "tuitTime": "23h",
+            "userTweet": "Amazing show about @inspiration4x mission!",
+            "contentTitle": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
+            "contentPreview": "From training to launch to landing, this all-access docuseries rides along with the inspiration4 crew on the first all-civilian orbital space...",
+            "contentLink": "netflix.com",
+            "contentImage": "../images/home_images/inspiration.jpg",
+            "comments": "4.2k",
+            "retuits": "3.5k",
+            "likes": "37.5k"
+        }
+}) => {
     return(
         // row corresponds to one post on the home screen
         <>
             <div className="row">
                 <div className="col-1">
-                    <img className="rounded-circle"
+                    <img className={"rounded-circle"}
                          src={post.userImage}
                          height="48px" width="48px"
                          alt="Responsive Image"/>
@@ -29,7 +44,7 @@ const HomePost = (post) => {
 
                      {/*Post Content*/}
                     <div>
-                        <PostContent/>
+                        <PostContent post={post}/>
                     </div>
 
                     {/*Icons*/}

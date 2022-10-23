@@ -1,3 +1,4 @@
+import React from 'react';
 import HomePost from "./home-post";
 import posts from "./home-posts.json"
 
@@ -13,5 +14,6 @@ const HomeContent = () => {
             </ul>
         </div>
     );
+
 }
 export default HomeContent;

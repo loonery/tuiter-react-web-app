@@ -1,7 +1,7 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import PostSummaryList from "../PostSummaryList/index.js";
 import HomeContent from "./HomeContent";
-
+import React from 'react';
 const HomeScreen = () => {
     return (
         <div className={"container"}>

@@ -16,7 +16,7 @@
     {
         "userName": "New York Post",
         "userHandle": "@nypost",
-        "userImage": "../images/home_images/elon.jpg",
+        "userImage": "./images/home_images/elon.jpg",
         "tuitTime": "23h",
         "userTweet": "Grimes seen reading Karl Marx following split with world's richest man Elon Musk trib.al/nx2Gfaq",
         "contentTitle": "",

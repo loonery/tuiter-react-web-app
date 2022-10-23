@@ -1,3 +1,4 @@
+import React from 'react';
 const PostContent = (
     {post = {
         "userName": "Elon Musk",
@@ -12,20 +13,20 @@ const PostContent = (
         "comments": "4.2k",
         "retuits": "3.5k",
         "likes": "37.5k"
-    }}) => {
+    }
+}) => {
 
     // content is assumed to be in the post until we find that it has no preview
     let content = true;
     if (post.contentPreview === '') {
-        content = false;
-    }
+        content = false;}
 
     // if there is content, then we render it, otherwise, we do not.
     if (content) {
         return(
             <>
                 <div>
-                    <img src={post.contentImage} 
+                    <img src={post.contentImage}
                     width="100%" 
                     className="border border-secondary rounded-top" 
                     alt="Responsive Image"/>
