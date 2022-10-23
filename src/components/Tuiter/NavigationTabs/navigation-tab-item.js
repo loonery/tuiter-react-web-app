@@ -1,9 +1,9 @@
 import React from "react";
 const NavigationTabItem = ({tab = {
-        text: "For you",
-        link: "#",
-        active: true,
-        hideIfWrapping: false,
+        "text": "For you",
+        "link": "#",
+        "active": true,
+        "hideIfWrapping": false,
     }
 }) => {
     let anchorClass = "nav-link";

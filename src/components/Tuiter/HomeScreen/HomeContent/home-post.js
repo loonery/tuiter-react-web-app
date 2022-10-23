@@ -1,3 +1,5 @@
+import PostContent from "./post-content";
+
 const HomePost = (post) => {
     return(
         // row corresponds to one post on the home screen
@@ -17,7 +19,8 @@ const HomePost = (post) => {
                         <div className="fw-semibold">
                             {post.userName}
                             <i className="fa-sharp fa-solid fa-circle-check fa-1x"></i>
-                            <span className="text-dark wd-small-font fw-light"> {post.userHandle} &cdot; {post.tuitTime}</span>
+                            <span className="text-dark wd-small-font fw-light">
+                                {post.userHandle} &cdot; {post.tuitTime}</span>
                         </div>
                         <div>
                             ${post.userTweet}
@@ -26,7 +29,7 @@ const HomePost = (post) => {
 
                      {/*Post Content*/}
                     <div>
-                        {<PostContent/>}
+                        <PostContent/>
                     </div>
 
                     {/*Icons*/}

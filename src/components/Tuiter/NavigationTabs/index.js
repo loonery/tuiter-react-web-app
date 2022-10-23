@@ -7,10 +7,10 @@ const NavigationTabs = () => {
         <>
             <ul className="nav nav-tabs mb-2">
                 {
-                    tabs.map(tab => {
-                        return (
-                            <NavigationTabItem tab={tab}/>);
-                    })
+                tabs.map(tab => {
+                    return (
+                        <NavigationTabItem tab={tab}/>);
+                })
                 }
             </ul>
         </>

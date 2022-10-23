@@ -31,7 +31,7 @@ const PostContent = (
                     alt="Responsive Image"/>
                 </div>
 
-                <!-- Content Text -->
+                {/*Content Text*/}
                 <div className="border border-secondary border-top-0 rounded-bottom pt-1">
                     <div className="ps-2 pb-2">
                         <span className="text-white">{post.contentTitle}</span>

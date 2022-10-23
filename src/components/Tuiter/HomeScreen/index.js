@@ -1,5 +1,6 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import PostSummaryList from "../PostSummaryList/index.js";
+import HomeContent from "./HomeContent";
 
 const HomeScreen = () => {
     return (

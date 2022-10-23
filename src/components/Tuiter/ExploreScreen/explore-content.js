@@ -8,7 +8,6 @@ import "./index.css";
 import PostSummaryList from "../PostSummaryList"
 import NavigationTabs from "../NavigationTabs";
 
-
 const ExploreContent = () => {
     return(
         <>
