@@ -30,8 +30,6 @@ const WhoToFollowListItem = ({
                             Follow
                         </button>
                     </div>
-
-
                 </div>
             </li>
         </>

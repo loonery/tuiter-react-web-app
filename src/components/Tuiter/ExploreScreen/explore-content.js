@@ -45,7 +45,7 @@ const ExploreContent = () => {
             <div className="pb-2 position-relative">
                 <img width="100%"
                      alt={"Missing Image"}
-                     src="./images/explore_images/starship.webp"/>
+                     src="../images/explore_images/starship.webp"/>
 
                 {/*Tuiter Image Text*/}
                 <h1 className="position-absolute bottom-0 text-muted ps-2 pb-2"> SpaceX's Starship</h1>
