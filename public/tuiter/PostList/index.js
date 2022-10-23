@@ -12,6 +12,5 @@ const PostItems = () => {
             }
         </ul>
     `)
-
 }
 export default PostItems;
