@@ -5,7 +5,7 @@ const PostContent = (
         "userHandle": "@elonmusk",
         "userImage": "../images/home_images/elon.jpg",
         "tuitTime": "23h",
-        "userTweet": "Amazing show about @inspiration4x mission!",
+        "userTweet": "Amazing show about mission!",
         "contentTitle": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
         "contentPreview": "From training to launch to landing, this all-access docuseries rides along with the inspiration4 crew on the first all-civilian orbital space...",
         "contentLink": "netflix.com",
@@ -47,13 +47,15 @@ const PostContent = (
         )
     } else {
         return(
-            <div>                                
-                <img src={post.contentImage}
-                width="100%"
-                className="border border-secondary rounded" 
-                alt="Responsive Image"/>
-            </div>
-        );
+            <>
+                <div>
+                    <img src={post.contentImage}
+                    width="100%"
+                    className="border border-secondary rounded"
+                    alt="Responsive Image"/>
+                </div>
+            </>
+        )
     }
 }
 export default PostContent;

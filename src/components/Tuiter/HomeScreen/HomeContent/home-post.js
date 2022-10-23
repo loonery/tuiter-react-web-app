@@ -32,13 +32,11 @@ const HomePost = (
                     {/*Username, handle, and retuit text*/}
                      <div className="ps-1 pb-2 text-white">
                         <div className="fw-semibold">
-                            {post.userName}
-                            <i className="fa-sharp fa-solid fa-circle-check fa-1x"></i>
-                            <span className="text-dark wd-small-font fw-light">
-                                {post.userHandle} &cdot; {post.tuitTime}</span>
+                            {post.userName} <i className="fa-sharp fa-solid fa-circle-check fa-1x"></i>
+                            <span className="text-dark wd-small-font fw-light"> {post.userHandle} - {post.tuitTime}</span>
                         </div>
                         <div>
-                            ${post.userTweet}
+                            {post.userTweet}
                         </div>
                      </div>
 
@@ -50,11 +48,11 @@ const HomePost = (
                     {/*Icons*/}
                     <div className="d-flex pt-3 ps-4 pb-3">
                         <div className="flex-fill"><i className="fa-regular fa-comment"></i>
-                            <span className="text-secondary wd-small-font">&ensp;${post.comments}</span></div>
+                            <span className="text-secondary wd-small-font">&ensp;{post.comments}</span></div>
                         <div className="flex-fill"> <i className="fa-solid fa-retweet"></i>
-                            <span className="text-secondary wd-small-font">&ensp;${post.retuits}</span></div>
+                            <span className="text-secondary wd-small-font">&ensp;{post.retuits}</span></div>
                         <div className="flex-fill"> <i className="fa-regular fa-comment"></i>
-                            <span className="text-secondary wd-small-font">&ensp;${post.likes}</span></div>
+                            <span className="text-secondary wd-small-font">&ensp;{post.likes}</span></div>
                         <div className="flex-fill"> <i className="fa-solid fa-upload"></i></div>
                     </div>
                 </div>

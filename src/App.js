@@ -1,6 +1,3 @@
-import './vendors/bootstrap-5.2.2-dist/css/bootstrap.min.css';
-import './vendors/fontawesome/css/all.min.css';
-import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Labs from "./components/labs/index.js";
 import ExploreScreen from "./components/Tuiter/ExploreScreen";

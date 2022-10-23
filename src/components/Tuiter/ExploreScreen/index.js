@@ -4,7 +4,7 @@ import WhoToFollowList from "../WhoToFollowList";
 
 const ExploreScreen = () => {
     return(
-        <div className={"container"}>
+        <div className={"container pt-3"}>
             <div className="row pt-2">
                 {/* Sidebar Component Loaded In */}
                 <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2">

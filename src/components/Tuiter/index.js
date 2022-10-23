@@ -4,16 +4,14 @@ import "../../vendors/bootswatch/bootstrap.min.css"
 import "../../vendors/fontawesome/css/all.min.css"
 import "../../index.css"
 
-// tuiter component inputs
-import ExploreScreen from "./ExploreScreen";
-
 // React imports
 import React from "react";
+import HomeScreen from "./HomeScreen";
 
 const Tuiter = () => {
     return(
         <>
-            <ExploreScreen/>
+            <HomeScreen/>
         </>
     );
 };
