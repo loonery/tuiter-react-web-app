@@ -1,5 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
+// define the initial state
 const initialTodos = [
     {
         _id: "123",
@@ -13,6 +14,7 @@ const initialTodos = [
     },
 ];
 
+// define the name of this store slice, its initial state, and the functions that operate on this store
 const todosSlice = createSlice({
     name: 'todos',
     initialState: initialTodos,
@@ -41,6 +43,7 @@ const todosSlice = createSlice({
     }
 });
 
-export const {addTodo, deleteTodo, todoDoneToggle} = todosSlice.actions // export actions so that they may be dispatched to
+// export actions so that they may be dispatched to
+export const {addTodo, deleteTodo, todoDoneToggle} = todosSlice.actions
 // manipulate the store
 export default todosSlice.reducer

@@ -1,8 +1,12 @@
 import React from "react";
-import whos from "./who.json";
+import {useSelector} from "react-redux";
 import WhoToFollowListItem from "./who-to-follow-list-item";
 
 const WhoToFollowList = () => {
+
+    // retrieve the 'who to follow' list from the state in store
+    const whoArray = () => {useSelector(state => state.who);}
+
     return(
         /* List of users*/
         <ul className="list-group rounded-1">
@@ -14,7 +18,7 @@ const WhoToFollowList = () => {
 
             {/* User to follow */}
             {
-                whos.map(who => {
+                whoArray.map(who => {
                     return(<WhoToFollowListItem who={who}/>);
                 })
             }

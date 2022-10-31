@@ -10,8 +10,8 @@ const Todos = () => {
     // useDispatch allows us to invoke reducer functions
     const dispatch = useDispatch();
 
-    // function handles keystroke changes on todo input fields
     // LOCAL STATE HANDLER
+    // function handles keystroke changes on todo input fields
     const todoChangeHandler = (event) => {
         const doValue = event.target.value;         // gets the data from the input field
         const newTodo = {

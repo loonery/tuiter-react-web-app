@@ -5,13 +5,19 @@ import "../../index.css"
 
 // React imports
 import React from "react";
-import HomeScreen from "./HomeScreen";
+import WhoToFollowList from "./WhoToFollowList";
+import {configureStore} from "@reduxjs/toolkit";
+import {Provider} from "react-redux";
+import whoReducer from "./reducers/who-reducer";
+
+// configure a store using the 'who' slice
+const store = configureStore({reducer: {who: whoReducer}});
 
 const Tuiter = () => {
     return(
-        <>
-            <HomeScreen/>
-        </>
+        <Provider store={store}>
+            <WhoToFollowList/>
+        </Provider>
     );
 };
 export default Tuiter;
