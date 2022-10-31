@@ -1,26 +1,17 @@
-import React from "react";
-import Classes from "../classes";
-import Styles from "./styles";
-import TodoList from "../todo/TodoList";
-import {Link} from "react-router-dom";
+import Nav from "../../nav";
+import Assignment6 from "./a6";
+import Assignment7 from "./a7";
+import {Routes, Route} from "react-router";
 
-/**
- * Labs relies on the classes component.
- */
-const Labs = () => {
-    return(
-        <>
-            <h1>Labs</h1>
-            <Link to="/hello">
-                Hello
-            </Link> |
-            <Link to="/tuiter/home">
-                Tuiter
-            </Link>
-            <Styles />
-            <Classes />
-            <TodoList/>
-        </>
-    )
-};
+function Labs() {
+    return (
+        <div>
+            <Nav/>
+            <Routes>
+                <Route index element={<Assignment6/>}/>
+                <Route path="a7" element={<Assignment7/>}/>
+            </Routes>
+        </div>
+    );
+}
 export default Labs;
