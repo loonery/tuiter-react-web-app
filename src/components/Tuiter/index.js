@@ -6,12 +6,13 @@ import "../../index.css"
 // React imports
 import React from "react";
 import WhoToFollowList from "./WhoToFollowList";
+import whoReducer from "./reducers/who-reducer";
 import {configureStore} from "@reduxjs/toolkit";
 import {Provider} from "react-redux";
-import whoReducer from "./reducers/who-reducer";
 
 // configure a store using the 'who' slice
-const store = configureStore({reducer: {who: whoReducer}});
+const store = configureStore(
+    {reducer: {who: whoReducer}});
 
 const Tuiter = () => {
     return(

@@ -5,7 +5,7 @@ import WhoToFollowListItem from "./who-to-follow-list-item";
 const WhoToFollowList = () => {
 
     // retrieve the 'who to follow' list from the state in store
-    const whoArray = () => {useSelector(state => state.who);}
+    const whoArray = useSelector(state => state.who);
 
     return(
         /* List of users*/
@@ -18,9 +18,9 @@ const WhoToFollowList = () => {
 
             {/* User to follow */}
             {
-                whoArray.map(who => {
-                    return(<WhoToFollowListItem who={who}/>);
-                })
+            whoArray.map(who => {
+                return(<WhoToFollowListItem who={who}/>);
+            })
             }
         </ul>
     );
