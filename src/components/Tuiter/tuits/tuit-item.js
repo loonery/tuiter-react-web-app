@@ -44,7 +44,6 @@ const TuitItem = ({tuit  = {
 
                         {/*icons and tuit stats*/}
                         <TuitStats tuit={tuit}/>
-
                     </div>
                 </div>
             </li>
