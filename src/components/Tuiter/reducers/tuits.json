@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "tuitTime": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "userImage": "../images/profile_images/spacex.jpg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "userHandle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and,being among the stars"
+  },
+  {
+    "_id": 123,
+    "topic": "EVs",
+    "userName": "Tesla",
+    "tuitTime": "4d",
+    "title": "Tesla AutoPilot",
+    "userImage":"../images/profile_images/tesla.png",
+    "liked": false,
+    "replies": 123,
+    "retuits": 543,
+    "likes": 3456,
+    "userHandle": "@tesla",
+    "tuit": "Tesla Autopilot is a suite of advanced driver-assistance system (ADAS) features offered by Tesla that amounts to SAE International Level 2 vehicle automation. Its features are lane centering, traffic-aware cruise control, automatic lane changes, semi-autonomous navigation on limited access freeways, self-parking, and the ability to summon the car from a garage or parking spot. With all of these features, the driver is responsible and the car requires constant supervision."
+  },
+  {
+    "_id": 654,
+    "topic": "Space",
+    "userName":"SpaceX",
+    "tuitTime": "2h",
+    "title": "Tesla Cybertruck Picks Up Steam",
+    "userImage": "../images/profile_images/spacex.jpg",
+    "liked": true,
+    "replies": 345,
+    "retuits": 321,
+    "likes": 1234,
+    "userHandle": "@spacex",
+    "tuit": "The Tesla Cybertruck is an upcoming battery electric light-duty truck announced by Tesla, Inc. in 2019. Three models have been announced, with EPA range estimates of 400–800 kilometers (250–500 mi) and an estimated 0–100 km/h (0–62 mph) time of 2.9–6.5 seconds, depending on the model."
+  }
+]

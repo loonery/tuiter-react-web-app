@@ -1,8 +1,11 @@
-
-import NavigationSidebar from "../NavigationSidebar/index.js";
-import PostSummaryList from "../PostSummaryList/index.js";
-import HomeContent from "./HomeContent";
+// import react library
 import React from 'react';
+
+// import homemade components
+import NavigationSidebar from "../NavigationSidebar/index.js";
+import TuitsList from "../tuits/tuits-list";
+import WhoToFollowList from "../WhoToFollowList";
+
 const HomeScreen = () => {
     return (
         <div className={"container pt-3"}>
@@ -13,11 +16,11 @@ const HomeScreen = () => {
                 </div>
                 {/*Main Content Component Loaded In */}
                 <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
-                    <HomeContent/>
+                    <TuitsList/>
                 </div>
                 {/*Navigation Sidebar Component Loaded In*/}
                 <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                    <PostSummaryList/>
+                    <WhoToFollowList/>
                 </div>
             </div>
         </div>
