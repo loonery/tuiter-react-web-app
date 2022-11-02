@@ -3,8 +3,8 @@ import React from 'react';
 
 // import homemade components
 import NavigationSidebar from "../NavigationSidebar/index.js";
-import TuitsList from "../tuits/tuits-list";
 import WhoToFollowList from "../WhoToFollowList";
+import HomeContent from "./HomeContent";
 
 const HomeScreen = () => {
     return (
@@ -16,7 +16,7 @@ const HomeScreen = () => {
                 </div>
                 {/*Main Content Component Loaded In */}
                 <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
-                    <TuitsList/>
+                    <HomeContent/>
                 </div>
                 {/*Navigation Sidebar Component Loaded In*/}
                 <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
