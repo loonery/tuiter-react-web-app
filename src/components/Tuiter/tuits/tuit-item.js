@@ -1,5 +1,12 @@
+// react and redux library imports
 import React from "react";
+import {useDispatch} from "react-redux";
+
+// component imports
 import TuitStats from "./tuit-stats";
+import {deleteTuit} from "../reducers/tuits-reducer";
+
+
 
 const TuitItem = ({tuit  = {
         "_id": 234,
@@ -16,6 +23,12 @@ const TuitItem = ({tuit  = {
         "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and,being among the stars"
     }
 }) => {
+
+    const dispatch = useDispatch();     // get dispatch function
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
+
     return(
         <>
             <li className={"list-group-item"}>
@@ -30,6 +43,11 @@ const TuitItem = ({tuit  = {
                     </div>
                     {/*tuit content here */}
                     <div className={"col-10"}>
+
+                        {/*use the garbage bin icon to call the function that deletes the tuit to which the garbage
+                          bin is attached */}
+                        <i className="fa-solid fa-xmark float-end"
+                           onClick={() => deleteTuitHandler(tuit._id)}></i>
 
                         {/*outer div wraps tuit header and tuit content*/}
                         <div className={"pb-2"}>

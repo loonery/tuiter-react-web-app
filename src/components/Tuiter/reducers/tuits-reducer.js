@@ -1,7 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 import tuits from "./tuits.json";
 
-
 // create an object that represents the currently
 // logged in user which contains profile information
 // such as username, their avatar logo, and handle.
@@ -39,8 +38,17 @@ const tuitSlice = createSlice(
                     ...templateTuit,
                     _id: (new Date()).getTime(),
                 })
+            },
+
+            // reducer that will manipulate the state such that we splice away the tuit that was requested for
+            // delete
+            deleteTuit(state, action) {
+                // get the index of the tuit whose id is passed in as the payload
+                const index = state.findIndex((tuit) => tuit._id === action.payload);
+                // splice out the retrieved id
+                state.splice(index, 1);
             }
         }
 });
-export const {createTuit} = tuitSlice.actions;
+export const {createTuit, deleteTuit} = tuitSlice.actions;
 export default tuitSlice.reducer;
