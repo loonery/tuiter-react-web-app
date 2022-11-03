@@ -1,5 +1,5 @@
 import React from "react";
-import Classes from "../../classes";
+import Classes from "../../Classes";
 import Styles from "./styles";
 import TodoList from "../../todo/TodoList";
 

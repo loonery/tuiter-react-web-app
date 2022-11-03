@@ -13,7 +13,7 @@ import whoReducer from "./reducers/who-reducer";
 
 // react components
 import tuitsReducer from "./reducers/tuits-reducer";
-import HomeScreen from "./HomeScreen";
+import ProfileScreen from "./Profile";
 
 
 // configure a store using the data slices we are declaring in the 'reducers' directory
@@ -23,7 +23,7 @@ const store = configureStore({
 const Tuiter = () => {
     return(
         <Provider store={store}>
-            <HomeScreen/>
+            <ProfileScreen/>
         </Provider>
     );
 };
