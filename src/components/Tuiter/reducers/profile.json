@@ -1,0 +1,17 @@
+[
+  {
+    "firstName": "Ryan",
+    "lastName": "Looney",
+    "handle": "@rloon",
+    "profilePicture": "../images/profile_images/tuiter_profile_picture.jpg",
+    "bannerPicture": "../images/profile_images/profile-banner.jpg",
+    "bio": "Software developer, athlete, musician, and all around hobbyist!",
+    "website": "youtube.com/r.loon",
+    "location": "Boston, MA",
+    "dateOfBirth": "01/09/1997",
+    "dateJoined": "11/3/2022",
+    "followingCount": 10,
+    "followersCount": 4,
+    "tuits": 2
+  }
+]

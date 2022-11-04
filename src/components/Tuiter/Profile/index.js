@@ -2,8 +2,11 @@ import NavigationSidebar from "../NavigationSidebar";
 import WhoToFollowList from "../WhoToFollowList";
 import React from "react";
 import Profile from "./profile";
+import {useSelector} from "react-redux";
 
 const ProfileScreen = () =>{
+    const profileData = useSelector(state => state.profile);
+    const myProfile = profileData[0];
     return (
         <div className={"container pt-3"}>
             <div class="row">
@@ -13,7 +16,7 @@ const ProfileScreen = () =>{
                 </div>
                 {/*Main Content Component Loaded In */}
                 <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
-                    <Profile/>
+                    <Profile profile={myProfile}/>
                 </div>
                 {/*Navigation Sidebar Component Loaded In*/}
                 <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">

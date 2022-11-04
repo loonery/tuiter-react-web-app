@@ -7,7 +7,6 @@ import TuitStats from "./tuit-stats";
 import {deleteTuit} from "../reducers/tuits-reducer";
 
 
-
 const TuitItem = ({tuit  = {
         "_id": 234,
         "topic": "Space",

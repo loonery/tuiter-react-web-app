@@ -6,9 +6,9 @@ import tuits from "./tuits.json";
 // such as username, their avatar logo, and handle.
 // Later this will come from users login in
 const currentUser = {
-    "userName": "Headgum",
-    "userHandle": "@hg",
-    "userImage": "../images/profile_images/hg.jpg",
+    "userName": "Ryan Looney",
+    "userHandle": "@rloon",
+    "userImage": "../images/profile_images/tuiter_profile_picture.jpg",
 };
 
 // The template tuit object has default values, and takes the current user's information (spreader notation)
