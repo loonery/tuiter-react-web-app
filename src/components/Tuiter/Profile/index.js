@@ -4,11 +4,10 @@ import React from "react";
 import Profile from "./profile";
 import {useSelector} from "react-redux";
 import EditProfile from "../EditProfile";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 
 const ProfileScreen = () =>{
     const profileData = useSelector(state => state.profile);
-    const myProfile = profileData[0];
     return (
         <div className={"container pt-3"}>
             <div class="row">
@@ -20,8 +19,8 @@ const ProfileScreen = () =>{
                 <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
                     {/*https://reactrouter.com/en/v6.3.0/getting-started/overview*/}
                     <Routes>
-                        <Route path="/" element={<Profile profile={myProfile}/>}/>
-                        <Route path="/edit_profile" element={<EditProfile profile={myProfile}/>}/>
+                        <Route path="/" element={<Profile profile={profileData}/>}/>
+                        <Route path="/edit_profile" element={<EditProfile profile={profileData}/>}/>
                     </Routes>
                 </div>
                 {/*Navigation Sidebar Component Loaded In*/}

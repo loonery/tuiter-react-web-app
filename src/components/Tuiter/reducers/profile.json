@@ -1,17 +1,15 @@
-[
-  {
-    "firstName": "Ryan",
-    "lastName": "Looney",
-    "handle": "@rloon",
-    "profilePicture": "../images/profile_images/tuiter_profile_picture.jpg",
-    "bannerPicture": "../images/profile_images/profile-banner.jpg",
-    "bio": "Software developer, athlete, musician, and all around hobbyist!",
-    "website": "youtube.com/r.loon",
-    "location": "Boston, MA",
-    "dateOfBirth": "1997-01-10",
-    "dateJoined": "2022-11-03",
-    "followingCount": 10,
-    "followersCount": 4,
-    "tuits": 2
-  }
-]
+{
+  "firstName": "Ryan",
+  "lastName": "Looney",
+  "handle": "@rloon",
+  "profilePicture": "../images/profile_images/tuiter_profile_picture.jpg",
+  "bannerPicture": "../images/profile_images/profile-banner.jpg",
+  "bio": "Software developer, hobbyist athlete, and musician!",
+  "website": "youtube.com/r.loon",
+  "location": "Boston, MA",
+  "dateOfBirth": "1997-01-09",
+  "dateJoined": "2022-11-03",
+  "followingCount": 10,
+  "followersCount": 4,
+  "tuits": 2
+}

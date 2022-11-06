@@ -1,5 +1,8 @@
 import React, {useState} from "react";
-import {useLocation, useNavigate} from "react-router-dom";
+import {Link, useLocation, useNavigate} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {saveProfileChanges} from "../reducers/profile-reducer";
+import "./index.css";
 
 const EditProfile = ({profile = {
     "firstName": "Ryan",
@@ -26,10 +29,31 @@ const EditProfile = ({profile = {
     let [websiteState, setWebsite] = useState(profile.website);
 
     // navigating back to profile (https://stackabuse.com/programmatically-navigate-using-react-router/)
-    const navigate = useNavigate(); const location = useLocation();
+    const navigate = useNavigate(); const location = useLocation(); const dispatch = useDispatch();
     const saveThisProfile = () => {
+
+        // get the local state of the name to pass to the user
+        const parsedName = nameState.split(" ");
+
+        // naive validation input for name
+        if (parsedName.length < 2) {
+            alert("name field must include first and last name seperated by a space character");
+            return;
+        }
+
+        // the changed profile object may contain any of the fields that are possible to change on this page
+        const changedProfile = {
+            firstName: parsedName[0],
+            lastName: parsedName[1],
+            bio: bioState,
+            location: locationState,
+            dateOfBirth: birthdayState,
+            website: websiteState
+        }
+        dispatch(saveProfileChanges(changedProfile));
+
+        // after saving, navigate back to the profile screen
         const path = location.pathname.replace('/edit_profile', '');
-        console.log(path);
         navigate(path);
     }
 
@@ -43,7 +67,8 @@ const EditProfile = ({profile = {
 
                 {/* x icon*/}
                 <div className="col-1 ps-4 d-flex">
-                    <i className="fa-solid fa-x align-self-center"></i>
+                    <Link to={"/tuiter/profile"}
+                          className="fa-solid fa-x align-self-center text-dark text-decoration-none"/>
                 </div>
 
                 {/* Edit profile header */}
@@ -60,13 +85,16 @@ const EditProfile = ({profile = {
 
             {/*profile banner image*/}
             <div className="row position-relative">
-                <img src= {"../" + profile.bannerPicture}
-                     className="w-100"/>
+                <img src= {"../" + profile.bannerPicture} className="w-100 wd-change-image"/>
+                <i className="fa-regular fa-circle fa-4x position-absolute wd-banner-circle-overlay"></i>
+                <i className="fa-solid fa-camera fa-2x position-absolute wd-banner-camera-overlay"></i>
 
                 {/*profile picture overlaid over banner image*/}
                 <div className="ms-4 pt-5">
                     <img src={"../" + profile.profilePicture}
-                         className="rounded-circle w-25 position-absolute bottom-0"/>
+                         className="rounded-circle w-25 wd-change-image position-absolute bottom-0"/>
+                    <i className="fa-regular fa-circle fa-4x position-absolute wd-camera-circle-overlay"></i>
+                    <i className="fa-solid fa-camera fa-2x position-absolute wd-camera-overlay"></i>
                 </div>
             </div>
 
@@ -87,7 +115,6 @@ const EditProfile = ({profile = {
                     />
                     <label htmlFor="nameInput">Name</label>
                 </div>
-
 
                 {/* user Bio input */}
                 <div className="form-floating mb-3 me-3">

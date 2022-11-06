@@ -1,6 +1,5 @@
 import React from 'react';
-import {Link, useLocation, useNavigate} from "react-router-dom";
-
+import {useLocation, useNavigate} from "react-router-dom";
 
 const Profile = ({profile = {
     "firstName": "Ryan",
@@ -21,18 +20,21 @@ const Profile = ({profile = {
 
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
     // set birthday rendering formats
-    const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' }
-    const birthday = new Date(profile.dateOfBirth);
-    const birthdayString = birthday.toLocaleDateString('en-US', dateOptions);
+    const dateOptions = {timezone: "UTC", year: 'numeric', month: 'short', day: 'numeric' }
 
-    const dateJoined = new Date(profile.dateJoined);
-    const dateJoinedString = dateJoined.toLocaleDateString('en-US', dateOptions);
+    // parse birthday into readable string
+    const birthdayDate = Date.parse(profile.dateOfBirth + " 12:00:00");
+    const birthdayString = new Date(birthdayDate).toLocaleDateString('en-US', dateOptions);
 
-    // navigating to edit profile (https://stackabuse.com/programmatically-navigate-using-react-router/)
-    const navigate = useNavigate(); const location = useLocation();
+    // parse date joined into readable string
+    const dateJoined = Date.parse(profile.dateJoined + " 12:00:00");
+    const dateJoinedString = new Date(dateJoined).toLocaleDateString('en-US', dateOptions);
+
+    // navigating to edit profile on button click (https://stackabuse.com/programmatically-navigate-using-react-router/)
+    const navigate = useNavigate();
+    const location = useLocation();
     const editThisProfile = () => {
         const path = location.pathname + '/edit_profile';
-        console.log(path);
         navigate(path);
     }
 

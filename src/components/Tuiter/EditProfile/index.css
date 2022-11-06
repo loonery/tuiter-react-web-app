@@ -1,0 +1,19 @@
+.wd-camera-overlay {
+    bottom: 15%;
+    left: 15%;
+}
+.wd-camera-circle-overlay {
+    bottom: 11%;
+    left: 12.5%;
+}
+.wd-banner-camera-overlay {
+    left: 45%;
+    bottom: 50%;
+}
+.wd-banner-circle-overlay {
+    left: 42.5%;
+    bottom: 45%;
+}
+.wd-change-image {
+    filter: brightness(65%);
+}
