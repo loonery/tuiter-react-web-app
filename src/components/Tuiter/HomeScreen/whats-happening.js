@@ -3,7 +3,11 @@ import {createTuit} from "../reducers/tuits-reducer";
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
+
+    // manage local state of the what's happening input
     let [whatsHappening, setWhatsHappening] = useState('');
+
+    // dispatch to the global state handlers
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
         const newTuit =  {

@@ -3,6 +3,8 @@ import WhoToFollowList from "../WhoToFollowList";
 import React from "react";
 import Profile from "./profile";
 import {useSelector} from "react-redux";
+import EditProfile from "../EditProfile";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 const ProfileScreen = () =>{
     const profileData = useSelector(state => state.profile);
@@ -16,7 +18,11 @@ const ProfileScreen = () =>{
                 </div>
                 {/*Main Content Component Loaded In */}
                 <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
-                    <Profile profile={myProfile}/>
+                    {/*https://reactrouter.com/en/v6.3.0/getting-started/overview*/}
+                    <Routes>
+                        <Route path="/" element={<Profile profile={myProfile}/>}/>
+                        <Route path="/edit_profile" element={<EditProfile profile={myProfile}/>}/>
+                    </Routes>
                 </div>
                 {/*Navigation Sidebar Component Loaded In*/}
                 <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">

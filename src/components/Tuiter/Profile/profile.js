@@ -1,6 +1,6 @@
 import React from 'react';
-import './index.css';
-import {useSelector} from "react-redux";
+import {Link, useLocation, useNavigate} from "react-router-dom";
+
 
 const Profile = ({profile = {
     "firstName": "Ryan",
@@ -11,13 +11,31 @@ const Profile = ({profile = {
     "bio": "Software developer, athlete, musician, and all around hobbyist!",
     "website": "youtube.com/r.loon",
     "location": "Boston, MA",
-    "dateOfBirth": "01/09/1968",
-    "dateJoined": "11/3/2022",
+    "dateOfBirth": "1997-01-09",
+    "dateJoined": "2022-11-03",
     "followingCount": 40,
     "followersCount": 23,
     "tuits": 1
 }
 }) => {
+
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
+    // set birthday rendering formats
+    const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' }
+    const birthday = new Date(profile.dateOfBirth);
+    const birthdayString = birthday.toLocaleDateString('en-US', dateOptions);
+
+    const dateJoined = new Date(profile.dateJoined);
+    const dateJoinedString = dateJoined.toLocaleDateString('en-US', dateOptions);
+
+    // navigating to edit profile (https://stackabuse.com/programmatically-navigate-using-react-router/)
+    const navigate = useNavigate(); const location = useLocation();
+    const editThisProfile = () => {
+        const path = location.pathname + '/edit_profile';
+        console.log(path);
+        navigate(path);
+    }
+
     return(
         // outer div wraps the profile section
         <div className="rounded-corners-all-around border">
@@ -50,14 +68,17 @@ const Profile = ({profile = {
 
                 {/*edit profile button*/}
                 <div className="position-absolute bottom-0">
-                    <button type={"button"} className="btn btn-light border rounded-pill float-end me-4">
-                        <span className="fw-bold"> Edit profile </span>
+                    <button type={"button"}
+                            className="btn btn-light border rounded-pill float-end me-4"
+                            onClick={editThisProfile}
+                    >
+                        <span className="fw-bold">Edit profile </span>
                     </button>
                 </div>
             </div>
 
             {/*user information*/}
-            <div className="ps-3 pt-4">
+            <div className="ps-3 pt-3">
 
                 {/*username and handle*/}
                 <div className="fw-bold fs-5">{profile.firstName} {profile.lastName}</div>
@@ -77,11 +98,11 @@ const Profile = ({profile = {
 
                     <div>
                         <i className="fa-regular fa-calendar ps-3"></i>
-                        <span className="text-muted fs-6">&ensp;{profile.dateOfBirth}</span>
+                        <span className="text-muted fs-6">&ensp;Born {birthdayString}</span>
                     </div>
                     <div>
                         <i className="fa-regular fa-user ps-3"></i>
-                        <span className="text-muted fs-6">&ensp;{profile.dateJoined}</span>
+                        <span className="text-muted fs-6">&ensp;Joined {dateJoinedString}</span>
                     </div>
                 </div>
 

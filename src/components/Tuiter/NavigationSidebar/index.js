@@ -33,34 +33,36 @@ const NavigationSidebar = ({active = 'Home'}) =>
                 </Link>
 
                 {/* Notifications */}
-                <a href="#"
+                <Link href="#"
                    className={`list-group-item list-group-item-action ${activeTab("Notifications", active)}`}>
-                    <i className="fa-solid fa-bell"></i> <span className="d-none d-xl-inline-block"> Notifications</span></a>
+                    <i className="fa-solid fa-bell"></i> <span className="d-none d-xl-inline-block"> Notifications</span>
+                </Link>
 
                 {/* Messages */}
-                <a href="#"
+                <Link href="#"
                    className={`list-group-item list-group-item-action ${activeTab("Messages", active)}`}>
-                    <i className="fa fa-envelope" aria-hidden="true"></i> <span className="d-none d-xl-inline-block "> Messages</span></a>
+                    <i className="fa fa-envelope" aria-hidden="true"></i> <span className="d-none d-xl-inline-block "> Messages</span></Link>
 
                 {/* Bookmarks */}
-                <a href="#"
+                <Link href="#"
                    className={`list-group-item list-group-item-action ${activeTab("Bookmarks", active)}`}>
-                    <i className="fa-sharp fa-solid fa-bookmark"></i> <span className="d-none d-xl-inline-block"> Bookmarks</span></a>
+                    <i className="fa-sharp fa-solid fa-bookmark"></i> <span className="d-none d-xl-inline-block"> Bookmarks</span></Link>
 
                 {/* Lists */}
-                <a href="#"
+                <Link href="#"
                    className={`list-group-item list-group-item-action ${activeTab("Lists", active)}`}>
-                    <i className="fa-solid fa-list"></i> <span className="d-none d-xl-inline-block"> Lists</span></a>
+                    <i className="fa-solid fa-list"></i> <span className="d-none d-xl-inline-block"> Lists</span></Link>
 
                 {/* Profile */}
-                <a href="#"
+                <Link to="/tuiter/profile"
                    className={`list-group-item list-group-item-action ${activeTab("Profile", active)}`}>
-                    <i className="fa-solid fa-user"></i> <span className="d-none d-xl-inline-block"> Profile</span></a>
+                    <i className="fa-solid fa-user"></i> <span className="d-none d-xl-inline-block"> Profile</span>
+                </Link>
 
                 {/*More */}
-                <a href="#"
+                <Link href="#"
                    className={`list-group-item list-group-item-action ${activeTab("More", active)}`}>
-                    <i className="fa-solid fa-circle-minus"></i> <span className="d-none d-xl-inline-block"> More</span></a>
+                    <i className="fa-solid fa-circle-minus"></i> <span className="d-none d-xl-inline-block"> More</span></Link>
             </div>
             {/* Tuit Button Rendered Under Navigation Links */}
             <button className="btn btn-primary rounded-pill w-100">
