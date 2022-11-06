@@ -21,7 +21,7 @@ const WhatsHappening = () => {
                 <img className="rounded-circle"
                      width="48px"
                      height="48px"
-                     src="../images/profile_images/hg.jpg"
+                     src="../images/profile_images/tuiter_profile_picture.jpg"
                      alt={"responsive image"}
                 />
             </div>
