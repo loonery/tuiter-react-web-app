@@ -14,7 +14,6 @@ import whoReducer from "./reducers/who-reducer";
 // react components
 import tuitsReducer from "./reducers/tuits-reducer";
 import ProfileScreen from "./Profile";
-import profileReducer from "./reducers/profile-reducer";
 import {Route, Routes} from "react-router-dom";
 import HomeScreen from "./HomeScreen";
 import ExploreScreen from "./ExploreScreen";

@@ -13,7 +13,6 @@ const TuitsList = () => {
     return (
         <>
             <ul className={"list-group"}>
-
                 {/*tuits are still loading, generate a message*/}
                 {
                     loading &&
@@ -25,7 +24,7 @@ const TuitsList = () => {
                 {/*render tuits once loading is complete*/}
                 {
                     !loading &&
-                    tuitArray.map(tuit => {
+                    tuits.map(tuit => {
                         return <TuitItem key={tuit._id}
                                          tuit={tuit}/>
                     })

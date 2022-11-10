@@ -17,9 +17,11 @@ const templateTuit = {
     "topic": "Space",
     "tuitTime": "2h",
     "liked": false,
+    "disliked": false,
     "replies": 0,
     "retuits": 0,
     "likes": 0,
+    "dislikes": 0,
 }
 
 const initialState = {
@@ -32,27 +34,16 @@ const tuitSlice = createSlice(
         name: 'tuitsData',
         initialState,
         extraReducers: {
-            [findTuitsThunk.pending]:
-                (state) => {
-                    state.loading = true
-                    state.tuits = []
-                },
             [findTuitsThunk.fulfilled]:
-            (state, { payload }) => {
-                state.loading = false
-                state.tuits = payload
-            },
-
-            [findTuitsThunk.rejected]:
-            (state) => {
-                state.loading = false
-            },
+                (state, { payload }) => {
+                    state.loading = false
+                    state.tuits = payload
+                },
 
             [deleteTuitThunk.fulfilled] :
                 (state, { payload }) => {
                     state.loading = false
-                    state.tuits = state.tuits
-                        .filter(t => t._id !== payload)
+                    state.tuits = state.tuits.filter(t => t._id !== payload)
                 },
             [createTuitThunk.fulfilled]:
                 (state, { payload }) => {
@@ -63,10 +54,7 @@ const tuitSlice = createSlice(
                 (state, { payload }) => {
                     state.loading = false
                     const tuitNdx = state.tuits.findIndex((t) => t._id === payload._id)
-                    state.tuits[tuitNdx] = {
-                        ...state.tuits[tuitNdx],
-                        ...payload
-                    }
+                    state.tuits[tuitNdx] = {...state.tuits[tuitNdx], ...payload}
                 }
         },
         // add the createTuit reducer function to this slice's reducers. This function appends a new tuit to the

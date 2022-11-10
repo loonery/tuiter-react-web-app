@@ -16,7 +16,7 @@ const WhatsHappening = () => {
             tuit: whatsHappening            // newTuit maps tuit to the text inside the textarea
         }
         dispatch(createTuitThunk(newTuit));    // dispatch to the createTuit reducer the information contained in the
-    }                                       // textarea
+    }                                          // textarea
     return (
         <div className="row">
             <div className="col-auto">
