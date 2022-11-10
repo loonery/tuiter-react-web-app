@@ -21,7 +21,10 @@ import ExploreScreen from "./ExploreScreen";
 
 // configure a store using the data slices we are declaring in the 'reducers' directory
 const store = configureStore({
-    reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer}});
+    reducer: {
+        who: whoReducer,
+        tuitsData: tuitsReducer,
+        }});
 
 const Tuiter = () => {
     return(
