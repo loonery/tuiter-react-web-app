@@ -1,6 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import tuits from "./tuits.json";
-import {findTuitsThunk} from "../../../services/tuits-thunks";
+import {createTuitThunk, deleteTuitThunk, findTuitsThunk, updateTuitThunk} from "../../../services/tuits-thunks";
 
 // create an object that represents the currently
 // logged in user which contains profile information
@@ -33,7 +32,6 @@ const tuitSlice = createSlice(
         name: 'tuitsData',
         initialState,
         extraReducers: {
-
             [findTuitsThunk.pending]:
                 (state) => {
                     state.loading = true
@@ -44,10 +42,32 @@ const tuitSlice = createSlice(
                 state.loading = false
                 state.tuits = payload
             },
+
             [findTuitsThunk.rejected]:
             (state) => {
                 state.loading = false
-            }
+            },
+
+            [deleteTuitThunk.fulfilled] :
+                (state, { payload }) => {
+                    state.loading = false
+                    state.tuits = state.tuits
+                        .filter(t => t._id !== payload)
+                },
+            [createTuitThunk.fulfilled]:
+                (state, { payload }) => {
+                    state.loading = false
+                    state.tuits.push(payload)
+                },
+            [updateTuitThunk.fulfilled]:
+                (state, { payload }) => {
+                    state.loading = false
+                    const tuitNdx = state.tuits.findIndex((t) => t._id === payload._id)
+                    state.tuits[tuitNdx] = {
+                        ...state.tuits[tuitNdx],
+                        ...payload
+                    }
+                }
         },
         // add the createTuit reducer function to this slice's reducers. This function appends a new tuit to the
         // front of the array of tuits contained in the state. All fields

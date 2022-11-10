@@ -1,4 +1,6 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {updateTuitThunk} from "../../../services/tuits-thunks";
 
 const TuitStats = ({tuit  = {
     "_id": 234,
@@ -10,6 +12,7 @@ const TuitStats = ({tuit  = {
     "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and,being among the stars"
 }
 }) => {
+    const dispatch = useDispatch();
     return(
     <>
         {/*Icons*/}
@@ -26,7 +29,13 @@ const TuitStats = ({tuit  = {
             {/*likes*/}
                 {/* liked-tuit */}
                 {tuit.liked &&
-                    <div className="flex-fill"> <i className={"fa-regular fa-heart"}></i>
+                    <div className="flex-fill"> <i onClick={() => dispatch(updateTuitThunk({
+                        ...tuit,
+                        likes: tuit.likes + 1,
+                        liked: tuit.liked = true
+                    }))}
+                    className={"fa-regular fa-heart"}></i>
+
                     <span className="text-secondary wd-small-font">&ensp;{tuit.likes}</span></div>
                 }
 

@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import {createTuit} from "../reducers/tuits-reducer";
+
 import {useDispatch} from "react-redux";
+import {createTuitThunk} from "../../../services/tuits-thunks";
 
 const WhatsHappening = () => {
 
@@ -13,7 +15,7 @@ const WhatsHappening = () => {
         const newTuit =  {
             tuit: whatsHappening            // newTuit maps tuit to the text inside the textarea
         }
-        dispatch(createTuit(newTuit));    // dispatch to the createTuit reducer the information contained in the
+        dispatch(createTuitThunk(newTuit));    // dispatch to the createTuit reducer the information contained in the
     }                                       // textarea
     return (
         <div className="row">
