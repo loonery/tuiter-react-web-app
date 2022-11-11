@@ -1,12 +1,13 @@
 import axios from 'axios';
-const TUITS_API = 'http://localhost:4000/api/tuits';    // TUITS_API is a constant referring to our middle tier
+
+// TUITS_API is a constant referring to our middle tier
+const TUITS_API = 'https://tuiter-node-server-app.herokuapp.com/api/tuits';
 
 // the asynchronous functions take advantage of multi-threading capability
 export const createTuit = async (tuit) => {
     const response = await axios.post(TUITS_API, tuit)
     return response.data;
 }
-
 export const findTuits = async () => {
     const response = await axios.get(TUITS_API);
     const tuits = response.data;    // data in this response is the tuits array
