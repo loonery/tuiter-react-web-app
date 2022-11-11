@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 // TUITS_API is a constant referring to our middle tier
-const TUITS_API = 'https://tuiter-node-server-app.herokuapp.com/api/tuits';
+const API_BASE = process.env.REACT_APP_API_BASE;
+const TUITS_API = `${API_BASE}/tuits`;
 
 // the asynchronous functions take advantage of multi-threading capability
 export const createTuit = async (tuit) => {
