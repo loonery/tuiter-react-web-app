@@ -26,7 +26,7 @@ const TuitStats = ({tuit  = {
             {/*likes*/}
                 {/* liked-tuit */}
                 {tuit.liked &&
-                    <div className="flex-fill"> <i className={"fa-regular fa-heart"}></i>
+                    <div className="flex-fill"> <i className="fa-solid fa-heart"></i>
                     <span className="text-secondary wd-small-font">&ensp;{tuit.likes}</span></div>
                 }
 
