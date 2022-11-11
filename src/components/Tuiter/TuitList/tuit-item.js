@@ -55,7 +55,7 @@ const TuitItem = ({tuit  = {
                         <div className={"pb-2"}>
                             <div className="fw-semibold">
                                 {tuit.userName} <i className="fa-sharp fa-solid fa-circle-check fa-1x"></i>
-                                <span className="text-muted wd-small-font fw-light"> {tuit.userHandle} - {tuit.tuitTime}</span>
+                                <span className="text-muted wd-small-font fw-light"> {tuit.userHandle} - {tuit.time}</span>
                             </div>
                             <div>
                                 {tuit.tuit}
