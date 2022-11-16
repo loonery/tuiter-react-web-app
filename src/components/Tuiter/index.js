@@ -32,7 +32,7 @@ const Tuiter = () => {
                 {/*any derivative of the profile path leads to here*/}
                 <Route path="/home" element={<HomeScreen/>}/>
                 <Route path="/profile/*" element={<ProfileScreen/>}/>
-                <Route path="/explore" element={<ExploreScreen/>}/>
+                <Route path="/explore/*" element={<ExploreScreen/>}/>
             </Routes>
         </Provider>
     );
