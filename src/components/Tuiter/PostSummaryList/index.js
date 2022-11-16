@@ -3,7 +3,7 @@ import PostSummaryItem from "./post-summary-item";
 import {useSelector} from "react-redux";     // retrieve data from store, not from static file
 
 const PostSummaryList = () => {
-    const postsArray = useSelector(state => state.tuits);       // useSelector gets the state from our store
+    const postsArray = useSelector(state => state.tuitsData);       // useSelector gets the state from our store
     return(
         /*Under-image links -->*/
         <div>
