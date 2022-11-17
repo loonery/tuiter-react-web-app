@@ -10,13 +10,13 @@ const ProfileScreen = () =>{
     const profileData = useSelector(state => state.profile);
     return (
         <div className={"container pt-3"}>
-            <div class="row">
+            <div className="row">
                 {/*Sidebar Component Loaded In*/}
-                <div class="col-xl-2 col-lg-1 col-md-2 col-sm-2">
+                <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2">
                     <NavigationSidebar active="Profile"/>
                 </div>
                 {/*Main Content Component Loaded In */}
-                <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                <div className="col-xl-6 col-lg-7 col-md-10 col-sm-10">
                     {/*https://reactrouter.com/en/v6.3.0/getting-started/overview*/}
                     <Routes>
                         <Route path="/" element={<Profile profile={profileData}/>}/>
@@ -24,7 +24,7 @@ const ProfileScreen = () =>{
                     </Routes>
                 </div>
                 {/*Navigation Sidebar Component Loaded In*/}
-                <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
+                <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                     <WhoToFollowList/>
                 </div>
             </div>
