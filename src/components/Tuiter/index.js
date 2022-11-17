@@ -10,9 +10,10 @@ import {Provider} from "react-redux";
 
 // reducer imports
 import whoReducer from "./reducers/who-reducer";
+import exploreReducer from "./reducers/explore_reducer";
+import tuitsReducer from "./reducers/tuits-reducer";
 
 // react components
-import tuitsReducer from "./reducers/tuits-reducer";
 import ProfileScreen from "./Profile";
 import {Route, Routes} from "react-router-dom";
 import HomeScreen from "./HomeScreen";
@@ -23,6 +24,7 @@ const store = configureStore({
     reducer: {
         who: whoReducer,
         tuitsData: tuitsReducer,
+        posts: exploreReducer,
         }});
 
 const Tuiter = () => {

@@ -26,7 +26,7 @@ const PostSummaryItem = ({
                 
                     <div className="col-4">
                         <img className="float-end rounded-2"
-                             src={post.image}
+                             src={post.userImage}
                              alt={"missing image"}
                              width="100"
                              height="100"/>
